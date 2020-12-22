@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+
+:root {
+    --main-color-one: #FFB400;
+    --main-color-two: #FF2950;
+    --main-color-three: #8D43E1;
+    --main-color-four: #0078CD;
+    --main-color-four: #00FCF2;
+    --main-color-five: #00CBE9;
+    --main-color-six: #8CDEFF;
+    --color-text-title: #018bf0;
+    --color-text: #333;
+    --color-text-blockquote: #8c8b8b;
+    --color-link: #dedfe6;
+    --color-bg: #ffffff;
+    --color-link-hover: #760fd5;
+    --color-info: #760fd5;
+}
+@font-face {
+    font-family: ACaslonPro-Regular;
+    src: url('fonts/ACaslonPro-Regular.otf');
+}
+@font-face {
+    font-family: ACaslonPro-Italic;
+    src: url('fonts/ACaslonPro-Italic.otf');
+}
+@font-face {
+    font-family: ACaslonPro-Bold;
+    src: url('fonts/ACaslonPro-Bold.otf');
+}
+
+body{
+    font-family: 'ACaslonPro-Regular';
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Hind', sans-serif;
+}
+
+blockquote{
+    font-family: ACaslonPro-Italic;
+    color: var(--color-text-blockquote);
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 10px auto;
+}
+
+blockquote p{
+    margin: 0px;
+}
+
+blockquote cite{
+    font-size: 1rem;
+    color: var(--color-text);
+}
+li{
+    margin: 0px !important;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.content__text a{
+    text-decoration: none;
+    color: #FF0050 !important;
+}
+.content__text a:hover{
+    text-decoration: underline;
+}
+.content__text a:visited{
+    color: #8B43E0 !important;
+}

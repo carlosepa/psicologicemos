@@ -1,0 +1,120 @@
+const btn = document.querySelectorAll(".graphic__nav .btn");
+const btnWeek = document.querySelector(
+  ".graphic__nav .btn[data-timerange='1A']"
+);
+const urlRates =
+  "https://app.ripio.com/api/v3/public/currencies/BTC/history/?quote=ARS";
+
+let rates = {
+  week: [],
+  month: [],
+  thirdMonth: [],
+  year: []
+};
+
+fetch(urlRates)
+  .then(resp => resp.json())
+  .then(function(data) {
+    let dateJson = data.reverse();
+    let filteredJson = dateJson.filter((elm, index) => {
+      if (
+        dateJson.length - 1 !== index &&
+        elm.date === dateJson[index + 1].date
+      ) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+
+    rates.week = filteredJson.slice(0, 7);
+    rates.month = filteredJson.slice(0, 30);
+    rates.thirdMonth = filteredJson.slice(0, 90);
+    rates.year = filteredJson.slice(0, 360);
+
+    for (let el of btn) {
+      el.addEventListener("click", e => {
+        for (let subel of btn) {
+          subel.classList.remove("--select");
+        }
+        e.target.classList.add("--select");
+        let newJson = [];
+
+        const timeRange = e.target.dataset.timerange;
+        switch (timeRange) {
+          case "1S":
+            newJson = rates.week;
+            break;
+          case "1M":
+            newJson = rates.month;
+            break;
+          case "3M":
+            newJson = rates.thirdMonth;
+            break;
+          case "1A":
+            newJson = rates.year;
+            break;
+          // no default
+        }
+        const options = {
+          series: [
+            {
+              name: "",
+              fontFamily: "Lato, sans-serif",
+              data: newJson.map(date => {
+                return { x: date.date, y: date.buy_rate };
+              })
+            }
+          ],
+          chart: { height: 384, type: "area", toolbar: { show: false } },
+          dataLabels: { enabled: false },
+          colors: ["#FEB402"],
+          stroke: { width: 1, curve: "smooth" },
+          xaxis: { type: "datetime" },
+          title: {
+            text: "Valor histórico del Bitcoin",
+            align: "center",
+            fontFamily: "Lato, sans-serif"
+          },
+          legend: {
+            showForSingleSeries: true,
+            position: "top",
+            fontSize: "30px",
+            fontFamily: "Lato, sans-serif",
+            color: "#255aee",
+            markers: { width: 0, height: 40, offsetX: 30, offsetY: 30 },
+            tooltipHoverFormatter: (_val, opts) => {
+              const value =
+                opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex];
+              const newOpts = value.toString().split(".");
+              newOpts[0] = newOpts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+              newOpts.join(",");
+              return `$${newOpts}`;
+            }
+          },
+          markers: { size: 0, hover: { sizeOffset: 6 } },
+          tooltip: { y: [{ title: { formatter: val => val } }] },
+          yaxis: {
+            labels: {
+              formatter: value => {
+                const newValue = value.toString().split(".");
+                newValue[0] = newValue[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                return `$${newValue.join(",")}`;
+              }
+            }
+          },
+          grid: {
+            borderColor: "#CCD2E8",
+            strokeDashArray: 0,
+            position: "back",
+            yaxis: { lines: { show: true } },
+            padding: { left: 20 }
+          }
+        };
+        document.querySelector("#chart").innerHTML = "";
+        const chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      });
+    }
+    btnWeek.click();
+  });

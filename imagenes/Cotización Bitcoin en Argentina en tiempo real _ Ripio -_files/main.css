@@ -1,0 +1,2984 @@
+@charset "UTF-8";
+/*
+ Color Palette Content
+*/
+/*
+ Color Palette UI
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+:root {
+  --indigo: #380574;
+  --purply-blue: #7908ff;
+  --pale-lilac: #ececf0;
+  --light-periwinkle: #d8d9e2;
+  --white: #ffffff;
+  --pink-red: #ff0050;
+  --dark-sky-blue: #309be5;
+  --charcoal-grey: #373744;
+  --bluey-grey: #a5a7af;
+  --aqua-blue: #01c9e8;
+  --aqua-green: #1edeaa;
+  --yellow-orange: #ffb300; }
+
+/*
+ Layout
+*/
+/*Skeleton*/
+ {
+  /* .bg__content--calculadora{
+    .converter{
+        box-shadow: none;
+        background-color: transparent;
+        .input{
+            input{
+                background-color: transparent;
+            }
+        }
+    }
+} */ }
+  .flex, .land__content .content__left, .land__content .content__right, .land__acceso .content__product, .land__control .content__product, .land__acceso .content__product .icon__product, .land__control .content__product .icon__product, .land__covid .content__collected, .land__covid .content__barcode, .land__covid .content__barcode .\--item, .land__covid .content__barcode .\--item .\--title, .land__covid .content__barcode .\--list, .land__covid .content__balance, .land__covid .content__balance .\--list, .land__covid .content__balance .\--list .\--item, .land__valores, .land__valores .cards__valores, .land__mockups, .land__mockups .content__mockup, .land__more_info .content__more_info, .land__steps .content__steps, .land__steps .content__steps .\--list, .land__steps .content__steps .\--list .\--item, .land__steps .content__steps .\--list .\--item .\--number, .land__info .cards__learn .content__card, .land__cripto .cards__learn, .land__cripto .cards__learn .content__card, .menu--responsive .menu__left .menu__item:nth-child(1) span, .land__news, .land__nosotros .content__nosotros, .land__nosotros .content__nosotros .\--photo, .land__learn.\--home .cards__learn .content__card, .land__nos .content__nos, .land__nos .content__data .\--list, .land__nos .content__data .\--list li, .land__como-comprar, .land__products, .land__como-comprar .content__product, .land__products .content__product, .land__como-comprar .content__product .icon__product, .land__products .content__product .icon__product, .land__content--banner, .land__content--donacion, .land__content--countries, .land__content.\--wallet .content__left, .land__content.\--wallet .content__right, .land__content.\--security .content__left, .land__content.\--security .content__right, .land__products.\--wallet.\--comprar .content__product:nth-child(odd) .text__product, .land__sponsor ul, .land__sponsor ul li, .land__contacto, .menu, .credit__module, .\--variation, .\--variation .\--buy, .\--variation .\--sell, .\--variation .\--variation, .converter, .converter form, .converter form .select__content, .converter form .converter__currency, .input.input__buy, .input.input__buy .input__content, .input.input__buy .input__content .input__buy--amount, .input .input__checkbox, .input.\--success, .input.\--error, .input.\--two, .land__about--cripto, .land__list .list--title, .land__list .list--content .row, .land__list .list--content .row .cripto, .content__graphic, .content__graphic .graphic__title, .content__graphic .graphic__nav, .footer .left__column .left__content, .footer .right__column, .footer .social__content, .dropdown .dropdown__button, .miscelanea_line.\--horizontal, .\--number {
+    display: flex; }
+  .contents, .land__content, .land__app, .land__info, .land__info .cards__learn, .land__module, .land__cripto, .land__learn, .land__learn .\--home, .land__learn .cards__learn, .land__learn .\--home .cards__learn, .land__cripto-world, .footer {
+    display: contents; }
+  @media only screen and (max-width: 401px) {
+    .sm-flex {
+      display: flex; } }
+  @media only screen and (max-width: 769px) {
+    .md-flex {
+      display: flex; } }
+  @media only screen and (max-width: 1441px) {
+    .lg-flex {
+      display: flex; } }
+  .flex-column, .land__content .content__left, .land__covid .content__collected, .land__covid .content__barcode, .land__covid .content__barcode .\--item, .land__covid .content__balance, .land__covid .content__balance .\--list .\--item, .land__valores, .land__mockups, .land__mockups .content__mockup, .land__more_info .content__more_info, .land__steps .content__steps, .land__steps .content__steps .\--list .\--item, .land__info .cards__learn .content__card, .land__cripto .cards__learn .content__card, .land__news, .land__nosotros .content__nosotros .\--photo, .land__content--donacion, .land__content--countries, .land__products.\--wallet.\--comprar .content__product:nth-child(odd) .text__product, .credit__module, .\--variation .\--buy, .\--variation .\--sell, .\--variation .\--variation, .input.input__buy, .input.input__buy .input__content .input__buy--amount, .input.\--success, .input.\--error, .content__graphic, .footer .left__column .left__content {
+    flex-direction: column; }
+  .flex-wrap, .land__covid .content__barcode .\--list, .land__covid .content__balance .\--list, .land__valores .cards__valores, .land__steps .content__steps .\--list, .land__nosotros .content__nosotros {
+    flex-wrap: wrap; }
+  .items-start, .land__content .content__left, .land__nos .content__nos, .land__content.\--wallet .content__left, .land__content.\--security .content__left, .input .input__checkbox {
+    align-items: flex-start; }
+  .items-end, .land__products.\--wallet.\--comprar .content__product:nth-child(odd) .text__product {
+    align-items: flex-end; }
+  .items-center, .land__content .content__right, .land__acceso .content__product, .land__control .content__product, .land__acceso .content__product .icon__product, .land__control .content__product .icon__product, .land__covid .content__collected, .land__covid .content__barcode, .land__covid .content__barcode .\--item, .land__covid .content__barcode .\--item .\--title, .land__covid .content__balance, .land__covid .content__balance .\--list .\--item, .land__valores, .land__mockups, .land__mockups .content__mockup, .land__more_info .content__more_info, .land__steps .content__steps, .land__steps .content__steps .\--list .\--item, .land__steps .content__steps .\--list .\--item .\--number, .land__cripto .cards__learn .content__card, .land__news, .land__nosotros .content__nosotros, .land__nosotros .content__nosotros .\--photo, .land__learn.\--home .cards__learn .content__card, .land__nos .content__data .\--list li, .land__como-comprar, .land__products, .land__como-comprar .content__product, .land__products .content__product, .land__como-comprar .content__product .icon__product, .land__products .content__product .icon__product, .land__content--banner, .land__content--donacion, .land__content--countries, .land__sponsor ul li, .land__contacto, .credit__module, .\--variation, .converter, .converter form, .converter form .select__content, .converter form .converter__currency, .input.input__buy, .input.input__buy .input__content, .input.input__buy .input__content .input__buy--amount, .land__about--cripto, .land__list .list--content .row, .land__list .list--content .row .cripto, .content__graphic, .content__graphic .graphic__title, .content__graphic .graphic__nav, .footer .social__content, .dropdown .dropdown__button, .\--number {
+    align-items: center; }
+  .items-baseline {
+    align-items: baseline; }
+  .items-stretch {
+    align-items: stretch; }
+  .self-start, .land__steps .content__steps .\--list .\--item .\--number, .\--number {
+    align-self: flex-start; }
+  .self-end {
+    align-self: flex-end; }
+  .self-center, .land__app .content__app, .land__app .content__image, .land__module .content__module, .land__module .content__image {
+    align-self: center; }
+  .self-baseline {
+    align-self: baseline; }
+  .self-stretch {
+    align-self: stretch; }
+  .justify-start, .land__list .list--content .row .cripto {
+    justify-content: flex-start; }
+  .justify-end {
+    justify-content: flex-end; }
+  .justify-center, .land__content .content__right, .land__acceso .content__product .icon__product, .land__control .content__product .icon__product, .land__covid .content__collected, .land__covid .content__barcode, .land__covid .content__barcode .\--item, .land__covid .content__barcode .\--item .\--title, .land__covid .content__balance, .land__covid .content__balance .\--list, .land__covid .content__balance .\--list .\--item, .land__valores, .land__valores .cards__valores, .land__mockups, .land__mockups .content__mockup, .land__more_info .content__more_info, .land__steps .content__steps, .land__steps .content__steps .\--list .\--item, .land__steps .content__steps .\--list .\--item .\--number, .land__news, .land__nosotros .content__nosotros .\--photo, .land__nos .content__nos, .land__nos .content__data .\--list li, .land__como-comprar, .land__products, .land__como-comprar .content__product, .land__products .content__product, .land__como-comprar .content__product .icon__product, .land__products .content__product .icon__product, .land__content--banner, .land__content--donacion, .land__content--countries, .land__content.\--security .content__left, .land__sponsor ul, .land__sponsor ul li, .land__contacto, .credit__module, .converter form, .converter form .select__content, .input.input__buy, .input.input__buy .input__content, .input.input__buy .input__content .input__buy--amount, .land__about--cripto, .content__graphic, .content__graphic .graphic__nav, .\--number {
+    justify-content: center; }
+  .justify-between, .land__acceso .content__product, .land__control .content__product, .land__covid .content__barcode .\--list, .land__steps .content__steps .\--list, .land__info .cards__learn .content__card, .land__cripto .cards__learn, .land__cripto .cards__learn .content__card, .land__nosotros .content__nosotros, .menu, .\--variation, .converter, .land__list .list--title, .land__list .list--content .row, .footer .social__content {
+    justify-content: space-between; }
+  .justify-around {
+    justify-content: space-around; }
+  .justify-evenly {
+    justify-content: space-evenly; }
+  .content-start {
+    align-content: flex-start; }
+  .content-end {
+    align-content: flex-end; }
+  .content-center {
+    align-content: center; }
+  .content-between {
+    align-content: space-between; }
+  .content-around {
+    align-content: space-around; }
+  .content-stretch {
+    align-content: stretch; }
+  .flex-auto {
+    flex: 1 1 auto;
+    min-width: 0;
+    /* 1 */
+    min-height: 0;
+    /* 1 */ }
+  .flex-none {
+    flex: none; }
+  .order-0 {
+    order: 0; }
+  .order-1 {
+    order: 1; }
+  .order-2 {
+    order: 2; }
+  .order-3 {
+    order: 3; }
+  .order-last {
+    order: 99999; }
+  :root {
+    --space-1: .5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 3rem;
+    --space-6: 4rem; }
+  .m0, .land__mockups .content__mockup .\--title, .land__mockups .content__mockup .\--bajada, .land__info .cards__learn .content__card h4, .land__cripto .cards__learn .content__card h4, .converter form .select__content svg.icon-chevron, .converter form .converter__currency .input, .select__content svg, .input.\--two .select__content, .dropdown .dropdown__button, .dropdown:hover .dropdown__list {
+    margin: 0; }
+  .mt0 {
+    margin-top: 0 !important; }
+  .mr0 {
+    margin-right: 0; }
+  .mb0, .land__content .content__left h1, .land__app .content__app .\--title, .land__module .content__module .\--title {
+    margin-bottom: 0; }
+  .ml0 {
+    margin-left: 0; }
+  .mx0 {
+    margin-left: 0;
+    margin-right: 0; }
+  .my0, .input.\--two .select__content:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .m1 {
+    margin: var(--space-1); }
+  .mt1, .input span, .input.input__buy .input__content .input__buy--amount div, .input.\--error span.\--error {
+    margin-top: var(--space-1); }
+  .mr1, .land__list .list--content .row .cripto img {
+    margin-right: var(--space-1); }
+  .mb1, .input.input__buy a {
+    margin-bottom: var(--space-1); }
+  .ml1, .input.input__buy .input__content .input__buy--amount div .buy--equal, .dropdown .dropdown__button svg.icon-chevron {
+    margin-left: var(--space-1); }
+  .mx1 {
+    margin-left: var(--space-1);
+    margin-right: var(--space-1); }
+  .my1 {
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-1); }
+  .m2 {
+    margin: var(--space-2); }
+  .mt2 {
+    margin-top: var(--space-2); }
+  .mr2, .converter form .input input {
+    margin-right: var(--space-2); }
+  .mb2 {
+    margin-bottom: var(--space-2); }
+  .ml2, .input.\--two .select__content:nth-child(2) {
+    margin-left: var(--space-2); }
+  .mx2 {
+    margin-left: var(--space-2);
+    margin-right: var(--space-2); }
+  .my2 {
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-2); }
+  .m3 {
+    margin: var(--space-3); }
+  .mt3 {
+    margin-top: var(--space-3); }
+  .mr3 {
+    margin-right: var(--space-3); }
+  .mb3 {
+    margin-bottom: var(--space-3); }
+  .ml3 {
+    margin-left: var(--space-3); }
+  .mx3, .converter form svg {
+    margin-left: var(--space-3);
+    margin-right: var(--space-3); }
+  .my3, .input:first-child {
+    margin-top: var(--space-3);
+    margin-bottom: var(--space-3); }
+  .m4 {
+    margin: var(--space-4); }
+  .mt4, .converter, .input {
+    margin-top: var(--space-4); }
+  .mr4 {
+    margin-right: var(--space-4); }
+  .mb4 {
+    margin-bottom: var(--space-4); }
+  .ml4 {
+    margin-left: var(--space-4); }
+  .mx4 {
+    margin-left: var(--space-4);
+    margin-right: var(--space-4); }
+  .my4, .land__nosotros .content__nosotros .\--photo, .land__learn .cards__learn .content__card img, .land__learn .\--home .cards__learn .content__card img, .content__graphic {
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-4); }
+  .m5 {
+    margin: var(--space-5); }
+  .mt5 {
+    margin-top: var(--space-5); }
+  .mr5 {
+    margin-right: var(--space-5); }
+  .mb5 {
+    margin-bottom: var(--space-5); }
+  .ml5 {
+    margin-left: var(--space-5); }
+  .mx5 {
+    margin-left: var(--space-5);
+    margin-right: var(--space-5); }
+  .my5 {
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-5); }
+  .m6 {
+    margin: var(--space-6); }
+  .mt6 {
+    margin-top: var(--space-6); }
+  .mr6 {
+    margin-right: var(--space-6); }
+  .mb6 {
+    margin-bottom: var(--space-6); }
+  .ml6 {
+    margin-left: var(--space-6); }
+  .mx6 {
+    margin-left: var(--space-6);
+    margin-right: var(--space-6); }
+  .my6 {
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-6); }
+  .mxn1 {
+    margin-left: calc(var(--space-1) * -1);
+    margin-right: calc(var(--space-1) * -1); }
+  .mxn2 {
+    margin-left: calc(var(--space-2) * -1);
+    margin-right: calc(var(--space-2) * -1); }
+  .mxn3 {
+    margin-left: calc(var(--space-3) * -1);
+    margin-right: calc(var(--space-3) * -1); }
+  .mxn4 {
+    margin-left: calc(var(--space-4) * -1);
+    margin-right: calc(var(--space-4) * -1); }
+  .m-auto, .land__mockups .content__mockup {
+    margin: auto; }
+  .mt-auto {
+    margin-top: auto; }
+  .mr-auto {
+    margin-right: auto; }
+  .mb-auto {
+    margin-bottom: auto; }
+  .ml-auto {
+    margin-left: auto; }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto; }
+  .my-auto {
+    margin-top: auto;
+    margin-bottom: auto; }
+  :root {
+    --space-1: .5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 3rem;
+    --space-6: 5rem; }
+  .p0, .land__nos .content__data .\--list, .land__sponsor ul, .dropdown .dropdown__list {
+    padding: 0; }
+  .pt0 {
+    padding-top: 0; }
+  .pr0 {
+    padding-right: 0; }
+  .pb0 {
+    padding-bottom: 0; }
+  .pl0 {
+    padding-left: 0; }
+  .px0 {
+    padding-left: 0;
+    padding-right: 0; }
+  .py0 {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .p1, .dropdown {
+    padding: var(--space-1); }
+  .pt1 {
+    padding-top: var(--space-1); }
+  .pr1 {
+    padding-right: var(--space-1); }
+  .pb1 {
+    padding-bottom: var(--space-1); }
+  .pl1 {
+    padding-left: var(--space-1); }
+  .py1 {
+    padding-top: var(--space-1);
+    padding-bottom: var(--space-1); }
+  .px1 {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1); }
+  .p2, .land__cripto--pair .cripto--pair .\--pair, .dropdown .dropdown__list li {
+    padding: var(--space-2); }
+  .pt2, .dropdown .dropdown__list li:first-child {
+    padding-top: var(--space-2); }
+  .pr2, .converter form .select__content select {
+    padding-right: var(--space-2); }
+  .pb2, .dropdown .dropdown__list .\--title, .dropdown .dropdown__list li:last-child {
+    padding-bottom: var(--space-2); }
+  .pl2 {
+    padding-left: var(--space-2); }
+  .py2, .dropdown .dropdown__button {
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2); }
+  .px2 {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2); }
+  .p3, .land__list .list--title, .land__list .list--content .row {
+    padding: var(--space-3); }
+  .pt3 {
+    padding-top: var(--space-3); }
+  .pr3 {
+    padding-right: var(--space-3); }
+  .pb3 {
+    padding-bottom: var(--space-3); }
+  .pl3 {
+    padding-left: var(--space-3); }
+  .py3 {
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3); }
+  .px3 {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3); }
+  .p4 {
+    padding: var(--space-4); }
+  .pt4 {
+    padding-top: var(--space-4); }
+  .pr4 {
+    padding-right: var(--space-4); }
+  .pb4 {
+    padding-bottom: var(--space-4); }
+  .pl4 {
+    padding-left: var(--space-4); }
+  .py4, .land__learn.\--home .cards__learn .content__card {
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4); }
+  .px4, .land__learn.\--home .cards__learn .content__card {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4); }
+  .p5 {
+    padding: var(--space-5); }
+  .pt5 {
+    padding-top: var(--space-5); }
+  .pr5 {
+    padding-right: var(--space-5); }
+  .pb5 {
+    padding-bottom: var(--space-5); }
+  .pl5 {
+    padding-left: var(--space-5); }
+  .py5 {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-5); }
+  .px5 {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5); }
+  .p6 {
+    padding: var(--space-6); }
+  .pt6 {
+    padding-top: var(--space-6); }
+  .pr6 {
+    padding-right: var(--space-6); }
+  .pb6 {
+    padding-bottom: var(--space-6); }
+  .pl6 {
+    padding-left: var(--space-6); }
+  .py6 {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6); }
+  .px6 {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6); }
+  :root {
+    --line-height-1: 1;
+    --line-height-2: 1.125;
+    --line-height-3: 1.25;
+    --line-height-4: 1.5;
+    --caps-letter-spacing: .2em;
+    --bold-font-weight: bold;
+    --size-1: .7rem;
+    --size-2: 1rem;
+    --size-3: 1.5rem;
+    --size-4: 2rem;
+    --size-5: 2.5rem;
+    --size-6: 3rem;
+    --size-7: 4rem; }
+  .font-family-inherit {
+    font-family: inherit; }
+  .font-size-inherit {
+    font-size: inherit; }
+  .text-decoration-none, .input.input__buy .input__content .input__buy--amount a {
+    text-decoration: none; }
+  .bold, .dropdown .dropdown__list .\--title {
+    font-weight: var(--bold-font-weight, bold); }
+  .regular {
+    font-weight: normal; }
+  .italic {
+    font-style: italic; }
+  .caps {
+    text-transform: uppercase;
+    letter-spacing: var(--caps-letter-spacing); }
+  .left-align {
+    text-align: left; }
+  .center, .land__covid .content__barcode, .land__covid .content__barcode .\--item, .land__covid .content__barcode .\--item .\--title, .land__covid .content__balance, .land__covid .content__balance .\--list .\--item, .land__valores .content__valores, .land__more_info .content__more_info, .land__steps .content__steps, .land__steps .content__steps .\--list .\--item, .land__info .content__info, .land__cripto .content__cripto, .land__cripto .cards__learn .content__card .\--container, .land__cripto .cards__learn .content__card .\--container .price, .land__news .content__news, .land__content--banner, .land__converter h2, .land__converter p, .land__nos .content__data .\--list li, .land__contacto h2, .land__contacto p, .button, .input.input__buy .input__content .input__buy--amount input, .land__cripto--pair .cripto--pair .\--pair, .land__list .list--content .row .link, .content__graphic {
+    text-align: center; }
+  .right-align {
+    text-align: right; }
+  .justify {
+    text-align: justify; }
+  .font1, .input span, .input.\--error span.\--error {
+    font-size: var(--size-1); }
+  .font2, .select__content select, .dropdown .dropdown__list li, .dropdown .dropdown__list li a {
+    font-size: var(--size-2); }
+  .font3 {
+    font-size: var(--size-3); }
+  .font4 {
+    font-size: var(--size-4); }
+  .font5, .converter form .select__content select, .converter form .input input {
+    font-size: var(--size-5); }
+  .font6, .input.input__buy .input__content .input__buy--amount input {
+    font-size: var(--size-6); }
+  .font7 {
+    font-size: var(--size-6); }
+  .nowrap {
+    white-space: nowrap; }
+  .break-word {
+    word-wrap: break-word; }
+  .line-height-1 {
+    line-height: var(--line-height-1); }
+  .line-height-2 {
+    line-height: var(--line-height-2); }
+  .line-height-3 {
+    line-height: var(--line-height-3); }
+  .line-height-4 {
+    line-height: var(--line-height-4); }
+  .list-style-none, .dropdown:hover .dropdown__list {
+    list-style: none; }
+  .underline {
+    text-decoration: underline; }
+  .pointer, .land__valores .cards__valores, .land__cripto .cards__learn .content__card, .menu--responsive .menu__left .menu__item:nth-child(1) span, .land__learn .cards__learn .content__card, .land__learn .\--home .cards__learn .content__card, .land__sponsor ul li, .converter form .select__content select, .converter form .select__content svg.icon-chevron, .select__content, .select__content svg, .dropdown, .dropdown .dropdown__list li:hover, .dropdown .dropdown__list li.\--unread {
+    cursor: pointer; }
+  .truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .list-reset {
+    list-style: none;
+    padding-left: 0; }
+  :root {
+    --width-1: 24rem;
+    --width-2: 32rem;
+    --width-3: 48rem;
+    --width-4: 64rem; }
+  .inline {
+    display: inline; }
+  .block, .dropdown:hover .dropdown__list, .miscelanea_line.\--vertical .\--text, .land__learn .miscelanea_line .\--line, .land__learn .miscelanea_line .\--text {
+    display: block; }
+  .none {
+    display: none !important; }
+  .inline-block, .button, .input.input__buy .input__content .input__buy--amount div .buy--equal {
+    display: inline-block; }
+  .table {
+    display: table; }
+  .table-cell {
+    display: table-cell; }
+  .overflow-hidden {
+    overflow: hidden; }
+  .overflow-scroll {
+    overflow: scroll; }
+  .overflow-auto {
+    overflow: auto; }
+  .relative, .land__covid .content__balance .\--list .\--item:nth-child(2), .land__cripto-world .cripto-world__content, .land__cripto-world .cripto-world__content--text, .land__nos .content__data .\--list li:nth-child(2), .land__nos .content__data .\--list:nth-child(2) li, .converter form .select__content svg.icon-chevron, .select__content svg, .input, .input.input__buy .input__content, .dropdown, .land__valores, .land__learn, .land__steps, .rate {
+    position: relative; }
+  .absolute, .land__covid .content__balance .\--list .\--item:nth-child(2):before, .land__covid .content__balance .\--list .\--item:nth-child(2):after, .land__cripto-world .cripto-world__content--text:after, .land__cripto-world .cripto-world__content--image, .land__nos .content__data .\--list li:nth-child(2) .\--image, .land__nos .content__data .\--list:nth-child(2) li .\--image, .dropdown .dropdown__list, .land__valores .miscelanea_line, .land__learn .miscelanea_line, .land__steps .miscelanea_line {
+    position: absolute; }
+  .fixed {
+    position: fixed; }
+  .vertical-align-top {
+    vertical-align: top; }
+  .vertical-align-middle {
+    vertical-align: middle; }
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+  .left {
+    float: left; }
+  .right {
+    float: right; }
+  .fit {
+    max-width: 100%; }
+  .max-width-1 {
+    max-width: var(--width-1); }
+  .max-width-2 {
+    max-width: var(--width-2); }
+  .max-width-3 {
+    max-width: var(--width-3); }
+  .max-width-4 {
+    max-width: var(--width-4); }
+  .border-box {
+    box-sizing: border-box; }
+  :root {
+    --width-1: 10%;
+    --width-2: 20%;
+    --width-3: 25%;
+    --width-4: 33%;
+    --width-10: 40%;
+    --width-5: 50%;
+    --width-6: 60%;
+    --width-7: 50%;
+    --width-8: 100%;
+    --width-11: 90%;
+    --width-9: auto; }
+  .w10 {
+    width: var(--width-1); }
+  .w20, .input.\--two .input.\--small {
+    width: var(--width-2); }
+  .w25 {
+    width: var(--width-3); }
+  .w33 {
+    width: var(--width-4); }
+  .w40 {
+    width: var(--width-10); }
+  .w50, .input.\--two .input {
+    width: var(--width-5); }
+  .w60 {
+    width: var(--width-6); }
+  .w70 {
+    width: var(--width-7); }
+  .w90 {
+    width: var(--width-11); }
+  .w100, .land__covid .content__barcode .\--list, .land__covid .content__balance .\--list, .land__valores.\--learn .content__valores, .land__steps .content__steps .\--list, .converter, .select__content select, .input.input__address, .input.input__address input, .input.input__buy .input__content .input__buy--amount input, .input.\--two .input input, .dropdown .dropdown__list .\--title {
+    width: var(--width-8); }
+  .wauto {
+    width: var(--width-9); }
+  .h100, .land__cripto--pair .cripto--pair {
+    height: 100vh; }
+  @media only screen and (max-width: 561px) {
+    .hide-xs {
+      display: none !important; } }
+  @media only screen and (max-width: 769px) {
+    .hide-sm, .land__products.\--wallet.\--comprar .content__product .\--number, .land__list .list--title .market, .land__list .list--title .variation, .land__list .list--title .link, .land__list .list--content .row .market, .land__list .list--content .row .variation, .land__list .list--content .row .link {
+      display: none !important; } }
+  @media only screen and (max-width: 1025px) {
+    .hide-md, .converter form .input__buy--icon, .miscelanea_line {
+      display: none !important; } }
+  @media only screen and (max-width: 1441px) {
+    .hide-lg {
+      display: none !important; } }
+  @media only screen and (max-width: 769px) {
+    .show-sm {
+      display: block !important; } }
+  .color-primary {
+    color: #6d07e6 !important; }
+  body {
+    font-family: 'Lato' !important;
+    scroll-behavior: smooth;
+    overflow-x: hidden; }
+  .bg__content {
+    font-family: 'Lato';
+    background-image: linear-gradient(to bottom, #6D07E6, #6D07E6), url("https://ripio-cms-us.s3.amazonaws.com/filer_public/a2/9f/a29f897d-cfa9-4fc4-910e-1cfed775a0b6/bg_transparent.svg"), url("https://ripio-cms-us.s3.amazonaws.com/filer_public/93/41/9341b0e6-3629-4134-b9d8-41c2391e85cf/index_hero.png");
+    background-repeat: no-repeat;
+    background-position: center bottom, 0px 2250px,  0px -1px;
+    background-size: 100vw 560px, 100%,  100%;
+    z-index: -1; }
+    @media only screen and (max-width: 1025px) {
+      .bg__content {
+        background-image: linear-gradient(to bottom, #6D07E6, #6D07E6), url("https://ripio-cms-us.s3.amazonaws.com/filer_public/a2/9f/a29f897d-cfa9-4fc4-910e-1cfed775a0b6/bg_transparent.svg"), url("https://ripio-cms-us.s3.amazonaws.com/filer_public/47/0f/470f61c6-940d-4945-a31b-cb8025f41f2c/background-mobile.png");
+        background-size: 100vw 1020px, 100%, 100%;
+        background-position: center bottom, center center, 0 0; } }
+  .bg__content--home {
+    background: linear-gradient(0deg, #6D07E6, #6D07E6);
+    height: 100vh; }
+  .bg__content--product {
+    font-family: 'Lato';
+    background: url("https://ripio-cms-us.s3.amazonaws.com/filer_public/37/38/3738dce8-28d2-4784-9184-808d43e2358f/background-performance.png"), linear-gradient(to bottom, #6D07E6, #6D07E6), linear-gradient(to bottom, #6D07E6, #6D07E6);
+    background-repeat: no-repeat;
+    background-position: 0px 0, 0px 0px, 0px bottom;
+    background-size: 100vw auto,  100vw 100vh, 100vw 560px; }
+    @media only screen and (max-width: 1025px) {
+      .bg__content--product {
+        background-size: 100vw auto,  100vw 125vh,  100vw 1030px;
+        background-position: 0px 0,  0px 0px,  0px bottom; } }
+    .bg__content--product .menu .menu__right .menu__item > a {
+      color: white !important; }
+    .bg__content--product .footer .left__column .left__content a:nth-child(3) {
+      color: white !important; }
+    .bg__content--product .white__space {
+      height: 100px; }
+      @media only screen and (max-width: 561px) {
+        .bg__content--product .white__space {
+          height: 50px; } }
+  .bg__content--security {
+    font-family: 'Lato';
+    background: linear-gradient(to bottom, #6D07E6, #6D07E6), linear-gradient(to bottom, #F8F3FF, #F8F3FF), linear-gradient(to bottom, #6D07E6, #6D07E6), linear-gradient(to bottom, #F8F3FF, #F8F3FF);
+    background-repeat: no-repeat;
+    background-position: 0px 0px, 0px 70vh,  0px bottom,  0px bottom;
+    background-size: 100vw 70vh, 100vw 300px, 100vw 560px, 100vw 950px; }
+    @media only screen and (max-width: 1025px) {
+      .bg__content--security {
+        background-size: 100vw 60vh,  100vw 340px,  100vw 1030px,  100vw 1425px;
+        background-position: 0px 0px,  0px 55vh,  0px bottom,  0px bottom; } }
+  .bg__content--donacion {
+    font-family: 'Lato';
+    background: url("https://ripio-cms-us.s3.amazonaws.com/filer_public/4f/71/4f71ec18-990e-4465-b38b-3e91549ddbbc/bg-donacion.png"), linear-gradient(to bottom, #F8F3FF, #F8F3FF), linear-gradient(to bottom, #6D07E6, #6D07E6);
+    background-repeat: no-repeat;
+    background-position: 0px top, 0px 1290px, center bottom;
+    background-size: 100vw 755px, 100vw 830px, 100vw 280px; }
+    @media only screen and (max-width: 1025px) {
+      .bg__content--donacion {
+        background-size: 100% 100vh, 100vw 1490px,  100vw 380px;
+        background-position: 0px top, 0px 1460px, center bottom; } }
+  .bg__content--calculadora {
+    font-family: 'Lato';
+    background: url("https://ripio-cms-us.s3.amazonaws.com/filer_public/84/55/8455937d-3cd0-4c2b-92da-f61442c01368/bg_calculadora.svg"), linear-gradient(to bottom, #F8F3FF, #F8F3FF), linear-gradient(to bottom, #6D07E6, #6D07E6);
+    background-repeat: no-repeat;
+    background-position: 0px 25vh, 0px 0px,     0px bottom;
+    background-size: 90%, 100vw 75vh,  100vw 560px; }
+    @media only screen and (max-width: 1025px) {
+      .bg__content--calculadora {
+        background-size: auto, 100vw 75vh,  100vw 1030px; } }
+  .bg__content--cotizacion {
+    font-family: 'Lato';
+    background: url("https://ripio-cms-us.s3.amazonaws.com/filer_public/37/38/3738dce8-28d2-4784-9184-808d43e2358f/background-performance.png"), linear-gradient(to bottom, #6D07E6, #6D07E6), linear-gradient(to bottom, #6D07E6, #6D07E6);
+    background-repeat: no-repeat;
+    background-position: 0px 0px, 0px 0px,  0px bottom;
+    background-size: 100vw auto,  100vw 130vh, 100vw 560px; }
+    @media only screen and (max-width: 1025px) {
+      .bg__content--cotizacion {
+        background-size: 200%,  100vw 130vh,  100vw 1030px; } }
+  .bg__content--institucional {
+    background: linear-gradient(to bottom, #6D07E6, #6D07E6), linear-gradient(to bottom, #6D07E6, #6D07E6), linear-gradient(to bottom, #F8F3FF, #F8F3FF);
+    background-repeat: no-repeat;
+    background-position: 0px bottom, 0px 1740px, 0px bottom;
+    background-size: 100vw 560px, 100vw 510px, 100vw 1100px; }
+    @media only screen and (max-width: 1025px) {
+      .bg__content--institucional {
+        background-position: 0px bottom, 0px 1625px, 0px bottom;
+        background-size: 100vw 1030px, 100vw 565px, 100vw 1750px; } }
+    .bg__content--institucional > .white__space {
+      height: 200px; }
+  .bg__content--como-comprar {
+    background: linear-gradient(to bottom, #F8F3FF, #F8F3FF), linear-gradient(to bottom, #6D07E6, #6D07E6);
+    background-repeat: no-repeat;
+    background-position: 0px top, 0px bottom;
+    background-size: 100vw 90vh, 100vw 560px; }
+    @media only screen and (max-width: 1025px) {
+      .bg__content--como-comprar {
+        background-size: 100vw 1030px; } }
+  .bg__content--banner {
+    background: linear-gradient(to bottom, #6D07E6, #6D07E6), linear-gradient(to bottom, #6D07E6, #6D07E6);
+    background-repeat: no-repeat;
+    background-position: 0px bottom, center 107px;
+    background-size: 100vw 560px, 100vw 263px; }
+    @media only screen and (max-width: 1025px) {
+      .bg__content--banner {
+        background-size: 100vw 1020px, 100vw 263px;
+        background-position: 0px bottom, center 84px; } }
+  .bg__content--br {
+    font-family: 'Lato';
+    background-image: url("/assets/images/SVG/bg_violet.svg"), url("/assets/images/SVG/bg_land.svg"), url("/assets/images/SVG/bg_products.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom,  100% -1px,  0% 32%;
+    background-size: 100%,  132%,  100% 2276px; }
+  svg.mano__hero {
+    width: 439px;
+    height: 541px; }
+    svg.mano__hero .cls-7:hover circle:first-child {
+      animation: main__radio___29BlM 3s ease-in-out infinite; }
+    svg.mano__hero .cls-7 {
+      transition: all 0.4s ease-in-out;
+      animation: main__float___1P4Uh 3s ease-in-out infinite; }
+  .menu__grey .dropdown__button, .menu__grey .menu .button.\--outline.\--revert {
+    color: var(--charcoal-grey) !important; }
+    .menu__grey .dropdown__button svg > path, .menu__grey .menu .button.\--outline.\--revert svg > path {
+      fill: var(--charcoal-grey) !important; }
+  .menu__grey .menu .button.\--outline.\--revert {
+    border: 1px solid var(--charcoal-grey) !important; }
+  .menu__grey .menu a.link, .menu__grey .land__news h1 {
+    color: var(--charcoal-grey); }
+  .menu__grey .menu__left .menu__item img {
+    filter: brightness(1); }
+  @media only screen and (max-width: 561px) {
+    .menu__grey .menu__left .menu__item:nth-child(2) img {
+      filter: brightness(0); } }
+  .white__space {
+    height: 250px; }
+    @media only screen and (max-width: 561px) {
+      .white__space {
+        height: 0px; } }
+    .white__space--module {
+      height: 100px; }
+      @media only screen and (max-width: 561px) {
+        .white__space--module {
+          height: 50px !important; } }
+
+@keyframes main__radio___29BlM {
+  0% {
+    r: 240.2px; }
+  50% {
+    r: 265px; }
+  100% {
+    r: 240.2px; } }
+
+@keyframes main__float___1P4Uh {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-90px); }
+  100% {
+    transform: translateY(0px); } }
+  .content__wrapper, .content {
+    color: #444;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 60px);
+    justify-content: center;
+    margin: auto;
+    padding: 0px 32px 0px 32px;
+    max-width: 1329px;
+    transition: all .225s ease; }
+    @media only screen and (max-width: 1025px) {
+      .content__wrapper, .content {
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 24px; } }
+    @media only screen and (max-width: 561px) {
+      .content__wrapper, .content {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 30px 0 30px; } }
+    @media only screen and (max-width: 1025px) {
+      .content__wrapper.\--cards, .content.\--cards {
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        grid-auto-columns: calc(30% - 32px);
+        grid-template-columns: 30%; } }
+    @media only screen and (max-width: 561px) {
+      .content__wrapper.\--cards, .content.\--cards {
+        grid-auto-columns: calc(50% - 32px);
+        grid-template-columns: 50%; } }
+    @media only screen and (max-width: 1025px) {
+      .content__wrapper.\--cards .col__4, .content__wrapper.\--cards .land__info .cards__learn .content__card, .land__info .cards__learn .content__wrapper.\--cards .content__card, .content__wrapper.\--cards .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content__wrapper.\--cards .content__card, .content__wrapper.\--cards .land__learn .cards__learn .content__card, .land__learn .cards__learn .content__wrapper.\--cards .content__card, .content.\--cards .col__4, .content.\--cards .land__info .cards__learn .content__card, .land__info .cards__learn .content.\--cards .content__card, .content.\--cards .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content.\--cards .content__card, .content.\--cards .land__learn .cards__learn .content__card, .land__learn .cards__learn .content.\--cards .content__card {
+        grid-column: auto / span 2 !important; } }
+    .content__wrapper .col__1, .content .col__1 {
+      grid-column: auto / span 1; }
+    .content__wrapper .col__2, .content .col__2 {
+      grid-column: auto / span 2; }
+    .content__wrapper .col__3, .content .col__3 {
+      grid-column: auto / span 3; }
+    .content__wrapper .col__4, .content__wrapper .land__info .cards__learn .content__card, .land__info .cards__learn .content__wrapper .content__card, .content__wrapper .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content__wrapper .content__card, .content__wrapper .land__learn .cards__learn .content__card, .land__learn .cards__learn .content__wrapper .content__card, .content .col__4, .content .land__info .cards__learn .content__card, .land__info .cards__learn .content .content__card, .content .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content .content__card, .content .land__learn .cards__learn .content__card, .land__learn .cards__learn .content .content__card {
+      grid-column: auto / span 4; }
+    .content__wrapper .col__5, .content__wrapper .land__content .content__right, .land__content .content__wrapper .content__right, .content__wrapper .land__app .content__app, .land__app .content__wrapper .content__app, .content__wrapper .land__module .content__module, .land__module .content__wrapper .content__module, .content__wrapper .footer .left__column, .footer .content__wrapper .left__column, .content .col__5, .content .land__content .content__right, .land__content .content .content__right, .content .land__app .content__app, .land__app .content .content__app, .content .land__module .content__module, .land__module .content .content__module, .content .footer .left__column, .footer .content .left__column {
+      grid-column: auto / span 5; }
+    .content__wrapper .col__6, .content .col__6 {
+      grid-column: auto / span 6; }
+    .content__wrapper .col__7, .content__wrapper .land__content .content__left, .land__content .content__wrapper .content__left, .content__wrapper .land__app .content__image, .land__app .content__wrapper .content__image, .content__wrapper .land__module .content__image, .land__module .content__wrapper .content__image, .content__wrapper .footer .right__column, .footer .content__wrapper .right__column, .content .col__7, .content .land__content .content__left, .land__content .content .content__left, .content .land__app .content__image, .land__app .content .content__image, .content .land__module .content__image, .land__module .content .content__image, .content .footer .right__column, .footer .content .right__column {
+      grid-column: auto / span 7; }
+    .content__wrapper .col__8, .content__wrapper .land__mockups .content__mockup, .land__mockups .content__wrapper .content__mockup, .content .col__8, .content .land__mockups .content__mockup, .land__mockups .content .content__mockup {
+      grid-column: auto / span 8; }
+    .content__wrapper .col__9, .content .col__9 {
+      grid-column: auto / span 9; }
+    .content__wrapper .col__10, .content .col__10 {
+      grid-column: auto / span 10; }
+    .content__wrapper .col__11, .content .col__11 {
+      grid-column: auto / span 11; }
+    .content__wrapper .col__12, .content__wrapper .land__info, .content__wrapper .land__info .content__info, .land__info .content__wrapper .content__info, .content__wrapper .land__cripto, .content__wrapper .land__cripto .content__cripto, .land__cripto .content__wrapper .content__cripto, .content__wrapper .land__cripto .cards__learn, .land__cripto .content__wrapper .cards__learn, .content__wrapper .land__news, .content__wrapper .land__content.\--cotizacion .content__left, .land__content.\--cotizacion .content__wrapper .content__left, .content__wrapper .land__nosotros, .content__wrapper .land__learn, .content__wrapper .land__learn .\--home, .land__learn .content__wrapper .\--home, .content__wrapper .land__learn .content__learn, .land__learn .content__wrapper .content__learn, .content__wrapper .land__cripto-world .cripto-world__content, .land__cripto-world .content__wrapper .cripto-world__content, .content__wrapper .land__learn.\--home .cards__learn, .land__learn.\--home .content__wrapper .cards__learn, .content__wrapper .\--variation, .content__wrapper .converter, .content__wrapper .land__list, .content__wrapper .row.right__column, .content .col__12, .content .land__info, .content .land__info .content__info, .land__info .content .content__info, .content .land__cripto, .content .land__cripto .content__cripto, .land__cripto .content .content__cripto, .content .land__cripto .cards__learn, .land__cripto .content .cards__learn, .content .land__news, .content .land__content.\--cotizacion .content__left, .land__content.\--cotizacion .content .content__left, .content .land__nosotros, .content .land__learn, .content .land__learn .\--home, .land__learn .content .\--home, .content .land__learn .content__learn, .land__learn .content .content__learn, .content .land__cripto-world .cripto-world__content, .land__cripto-world .content .cripto-world__content, .content .land__learn.\--home .cards__learn, .land__learn.\--home .content .cards__learn, .content .\--variation, .content .converter, .content .land__list, .content .row.right__column {
+      grid-column: auto / span 12; }
+    @media only screen and (max-width: 1025px) {
+      .content__wrapper .col__3, .content__wrapper .col__4, .content__wrapper .land__info .cards__learn .content__card, .land__info .cards__learn .content__wrapper .content__card, .content__wrapper .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content__wrapper .content__card, .content__wrapper .land__learn .cards__learn .content__card, .land__learn .cards__learn .content__wrapper .content__card, .content__wrapper .col__5, .content__wrapper .land__content .content__right, .land__content .content__wrapper .content__right, .content__wrapper .land__app .content__app, .land__app .content__wrapper .content__app, .content__wrapper .land__module .content__module, .land__module .content__wrapper .content__module, .content__wrapper .footer .left__column, .footer .content__wrapper .left__column, .content__wrapper .col__6, .content__wrapper .col__7, .content__wrapper .land__content .content__left, .land__content .content__wrapper .content__left, .content__wrapper .land__app .content__image, .land__app .content__wrapper .content__image, .content__wrapper .land__module .content__image, .land__module .content__wrapper .content__image, .content__wrapper .footer .right__column, .footer .content__wrapper .right__column, .content__wrapper .col__8, .content__wrapper .land__mockups .content__mockup, .land__mockups .content__wrapper .content__mockup, .content__wrapper .col__9, .content__wrapper .col__10, .content__wrapper .col__11, .content__wrapper .col__12, .content__wrapper .land__info, .content__wrapper .land__info .content__info, .land__info .content__wrapper .content__info, .content__wrapper .land__cripto, .content__wrapper .land__cripto .content__cripto, .land__cripto .content__wrapper .content__cripto, .content__wrapper .land__cripto .cards__learn, .land__cripto .content__wrapper .cards__learn, .content__wrapper .land__news, .content__wrapper .land__content.\--cotizacion .content__left, .land__content.\--cotizacion .content__wrapper .content__left, .content__wrapper .land__nosotros, .content__wrapper .land__learn, .content__wrapper .land__learn .\--home, .land__learn .content__wrapper .\--home, .content__wrapper .land__learn .content__learn, .land__learn .content__wrapper .content__learn, .content__wrapper .land__cripto-world .cripto-world__content, .land__cripto-world .content__wrapper .cripto-world__content, .content__wrapper .land__learn.\--home .cards__learn, .land__learn.\--home .content__wrapper .cards__learn, .content__wrapper .\--variation, .content__wrapper .converter, .content__wrapper .land__list, .content__wrapper .row.right__column, .content .col__3, .content .col__4, .content .land__info .cards__learn .content__card, .land__info .cards__learn .content .content__card, .content .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content .content__card, .content .land__learn .cards__learn .content__card, .land__learn .cards__learn .content .content__card, .content .col__5, .content .land__content .content__right, .land__content .content .content__right, .content .land__app .content__app, .land__app .content .content__app, .content .land__module .content__module, .land__module .content .content__module, .content .footer .left__column, .footer .content .left__column, .content .col__6, .content .col__7, .content .land__content .content__left, .land__content .content .content__left, .content .land__app .content__image, .land__app .content .content__image, .content .land__module .content__image, .land__module .content .content__image, .content .footer .right__column, .footer .content .right__column, .content .col__8, .content .land__mockups .content__mockup, .land__mockups .content .content__mockup, .content .col__9, .content .col__10, .content .col__11, .content .col__12, .content .land__info, .content .land__info .content__info, .land__info .content .content__info, .content .land__cripto, .content .land__cripto .content__cripto, .land__cripto .content .content__cripto, .content .land__cripto .cards__learn, .land__cripto .content .cards__learn, .content .land__news, .content .land__content.\--cotizacion .content__left, .land__content.\--cotizacion .content .content__left, .content .land__nosotros, .content .land__learn, .content .land__learn .\--home, .land__learn .content .\--home, .content .land__learn .content__learn, .land__learn .content .content__learn, .content .land__cripto-world .cripto-world__content, .land__cripto-world .content .cripto-world__content, .content .land__learn.\--home .cards__learn, .land__learn.\--home .content .cards__learn, .content .\--variation, .content .converter, .content .land__list, .content .row.right__column {
+        grid-column: auto / span 8; } }
+    @media only screen and (max-width: 561px) {
+      .content__wrapper .col__3, .content__wrapper .col__4, .content__wrapper .land__info .cards__learn .content__card, .land__info .cards__learn .content__wrapper .content__card, .content__wrapper .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content__wrapper .content__card, .content__wrapper .land__learn .cards__learn .content__card, .land__learn .cards__learn .content__wrapper .content__card, .content__wrapper .col__5, .content__wrapper .land__content .content__right, .land__content .content__wrapper .content__right, .content__wrapper .land__app .content__app, .land__app .content__wrapper .content__app, .content__wrapper .land__module .content__module, .land__module .content__wrapper .content__module, .content__wrapper .footer .left__column, .footer .content__wrapper .left__column, .content__wrapper .col__6, .content__wrapper .col__7, .content__wrapper .land__content .content__left, .land__content .content__wrapper .content__left, .content__wrapper .land__app .content__image, .land__app .content__wrapper .content__image, .content__wrapper .land__module .content__image, .land__module .content__wrapper .content__image, .content__wrapper .footer .right__column, .footer .content__wrapper .right__column, .content__wrapper .col__8, .content__wrapper .land__mockups .content__mockup, .land__mockups .content__wrapper .content__mockup, .content__wrapper .col__9, .content__wrapper .col__10, .content__wrapper .col__11, .content__wrapper .col__12, .content__wrapper .land__info, .content__wrapper .land__info .content__info, .land__info .content__wrapper .content__info, .content__wrapper .land__cripto, .content__wrapper .land__cripto .content__cripto, .land__cripto .content__wrapper .content__cripto, .content__wrapper .land__cripto .cards__learn, .land__cripto .content__wrapper .cards__learn, .content__wrapper .land__news, .content__wrapper .land__content.\--cotizacion .content__left, .land__content.\--cotizacion .content__wrapper .content__left, .content__wrapper .land__nosotros, .content__wrapper .land__learn, .content__wrapper .land__learn .\--home, .land__learn .content__wrapper .\--home, .content__wrapper .land__learn .content__learn, .land__learn .content__wrapper .content__learn, .content__wrapper .land__cripto-world .cripto-world__content, .land__cripto-world .content__wrapper .cripto-world__content, .content__wrapper .land__learn.\--home .cards__learn, .land__learn.\--home .content__wrapper .cards__learn, .content__wrapper .\--variation, .content__wrapper .converter, .content__wrapper .land__list, .content__wrapper .row.right__column, .content .col__3, .content .col__4, .content .land__info .cards__learn .content__card, .land__info .cards__learn .content .content__card, .content .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content .content__card, .content .land__learn .cards__learn .content__card, .land__learn .cards__learn .content .content__card, .content .col__5, .content .land__content .content__right, .land__content .content .content__right, .content .land__app .content__app, .land__app .content .content__app, .content .land__module .content__module, .land__module .content .content__module, .content .footer .left__column, .footer .content .left__column, .content .col__6, .content .col__7, .content .land__content .content__left, .land__content .content .content__left, .content .land__app .content__image, .land__app .content .content__image, .content .land__module .content__image, .land__module .content .content__image, .content .footer .right__column, .footer .content .right__column, .content .col__8, .content .land__mockups .content__mockup, .land__mockups .content .content__mockup, .content .col__9, .content .col__10, .content .col__11, .content .col__12, .content .land__info, .content .land__info .content__info, .land__info .content .content__info, .content .land__cripto, .content .land__cripto .content__cripto, .land__cripto .content .content__cripto, .content .land__cripto .cards__learn, .land__cripto .content .cards__learn, .content .land__news, .content .land__content.\--cotizacion .content__left, .land__content.\--cotizacion .content .content__left, .content .land__nosotros, .content .land__learn, .content .land__learn .\--home, .land__learn .content .\--home, .content .land__learn .content__learn, .land__learn .content .content__learn, .content .land__cripto-world .cripto-world__content, .land__cripto-world .content .cripto-world__content, .content .land__learn.\--home .cards__learn, .land__learn.\--home .content .cards__learn, .content .\--variation, .content .converter, .content .land__list, .content .row.right__column {
+        grid-column: auto / span 2; } }
+    .content__wrapper .\--start2, .content .\--start2 {
+      grid-column-start: 2; }
+    .content__wrapper .\--start3, .content .\--start3 {
+      grid-column-start: 3; }
+    .content__wrapper .\--start4, .content .\--start4 {
+      grid-column-start: 4; }
+    .content__wrapper .\--start5, .content .\--start5 {
+      grid-column-start: 5; }
+    @media only screen and (max-width: 561px) {
+      .content__wrapper .\--start2, .content__wrapper .\--start3, .content__wrapper .\--start4, .content__wrapper .\--start5, .content .\--start2, .content .\--start3, .content .\--start4, .content .\--start5 {
+        grid-column-start: 1; } }
+    @media only screen and (max-width: 1025px) {
+      .content__wrapper .\--start2, .content__wrapper .\--start3, .content__wrapper .\--start4, .content__wrapper .\--start5, .content .\--start2, .content .\--start3, .content .\--start4, .content .\--start5 {
+        grid-column-start: 1; } }
+    @media only screen and (max-width: 561px) {
+      .content__wrapper .cripto--pair .col__4, .content__wrapper .cripto--pair .land__info .cards__learn .content__card, .land__info .cards__learn .content__wrapper .cripto--pair .content__card, .content__wrapper .cripto--pair .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content__wrapper .cripto--pair .content__card, .content__wrapper .cripto--pair .land__learn .cards__learn .content__card, .land__learn .cards__learn .content__wrapper .cripto--pair .content__card, .content .cripto--pair .col__4, .content .cripto--pair .land__info .cards__learn .content__card, .land__info .cards__learn .content .cripto--pair .content__card, .content .cripto--pair .land__cripto .cards__learn .content__card, .land__cripto .cards__learn .content .cripto--pair .content__card, .content .cripto--pair .land__learn .cards__learn .content__card, .land__learn .cards__learn .content .cripto--pair .content__card {
+        grid-column: auto / span 1; } }
+  .land__content .content__left {
+    color: var(--white);
+    height: calc(100vh - 124px); }
+    .land__content .content__left .button {
+      padding: 20px 30px !important; }
+    @media only screen and (max-width: 561px) {
+      .land__content .content__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 130vh; } }
+    .land__content .content__left h1 {
+      font-family: 'Lato';
+      font-weight: 900;
+      font-size: 56px;
+      margin-top: 2vh; }
+      @media only screen and (max-width: 561px) {
+        .land__content .content__left h1 {
+          font-size: 34px;
+          text-align: center;
+          margin-top: -10px;
+          margin-bottom: 1px; } }
+    .land__content .content__left p.\--bajada {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 26px; }
+      @media only screen and (max-width: 561px) {
+        .land__content .content__left p.\--bajada {
+          text-align: center; } }
+    .land__content .content__left .content__bajada {
+      font-weight: 300;
+      font-size: 20px;
+      margin-top: 29px;
+      margin-bottom: 54px; }
+      @media only screen and (max-width: 561px) {
+        .land__content .content__left .content__bajada {
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          margin-bottom: 19px; } }
+    .land__content .content__left .button {
+      font-weight: 400;
+      font-size: 14px;
+      padding: 14px 24px;
+      width: 134px;
+      color: var(--charcoal-grey); }
+  @media only screen and (max-width: 561px) {
+    .land__content .content__right {
+      justify-content: center;
+      align-items: center;
+      margin-top: 45px; } }
+  @media only screen and (max-width: 561px) {
+    .land__content .content__right img, .land__content .content__right svg {
+      width: 236px;
+      height: 380px; } }
+  .land__acceso, .land__control {
+    margin: 30vh 0px; }
+    @media only screen and (max-width: 561px) {
+      .land__acceso, .land__control {
+        margin: 4vh 0px 0vh 0px; } }
+    @media only screen and (max-width: 561px) {
+      .land__acceso .content__product, .land__control .content__product {
+        display: flex;
+        flex-direction: column-reverse; } }
+    .land__acceso .content__product .text__product, .land__control .content__product .text__product {
+      width: 50%;
+      max-width: 50%; }
+      @media only screen and (max-width: 561px) {
+        .land__acceso .content__product .text__product, .land__control .content__product .text__product {
+          width: 100%;
+          max-width: 100%;
+          text-align: center; } }
+      .land__acceso .content__product .text__product .\--title, .land__control .content__product .text__product .\--title {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 72px; }
+      .land__acceso .content__product .text__product .\--bajada, .land__control .content__product .text__product .\--bajada {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 40px;
+        padding-right: 70px; }
+        @media only screen and (max-width: 561px) {
+          .land__acceso .content__product .text__product .\--bajada, .land__control .content__product .text__product .\--bajada {
+            margin: 0px;
+            padding: 0px;
+            margin-top: 17px; } }
+    .land__acceso .content__product .icon__product, .land__control .content__product .icon__product {
+      position: absolute;
+      right: 0px;
+      z-index: -1;
+      width: 50%; }
+      .land__acceso .content__product .icon__product img, .land__control .content__product .icon__product img {
+        width: 100%; }
+        @media only screen and (max-width: 561px) {
+          .land__acceso .content__product .icon__product img, .land__control .content__product .icon__product img {
+            width: 80%; } }
+  @media only screen and (max-width: 561px) {
+    .land__acceso .icon__product {
+      background-repeat: no-repeat;
+      width: 120% !important;
+      background-position: 90px 0px;
+      background-size: contain;
+      position: initial !important;
+      height: 378px !important;
+      margin: 0px;
+      background-image: url("https://ripio-cms-us.s3.amazonaws.com/filer_public/00/db/00db026f-a8f8-45f9-86e4-8b4f41daaa42/ilus_acceso3x.png"); } }
+  .land__acceso.\--offline {
+    margin: 0px; }
+    .land__acceso.\--offline .icon__product {
+      width: 418px !important;
+      position: initial; }
+      @media only screen and (max-width: 561px) {
+        .land__acceso.\--offline .icon__product {
+          background-image: none;
+          width: 100% !important; } }
+  .land__covid .content__collected {
+    margin-top: 60px; }
+    .land__covid .content__collected span.\--title {
+      font-weight: 300;
+      font-size: 34px;
+      line-height: 41px;
+      text-align: center;
+      color: var(--charcoal-grey);
+      margin-bottom: 10px; }
+    .land__covid .content__collected span.\--total {
+      font-weight: 900;
+      font-size: 70px;
+      line-height: 84px;
+      color: #6d07e6;
+      margin-bottom: 10px; }
+      @media only screen and (max-width: 561px) {
+        .land__covid .content__collected span.\--total {
+          font-size: 48px; } }
+    .land__covid .content__collected span.\--monto {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px; }
+  .land__covid .content__barcode .\--item {
+    width: 50%; }
+    @media only screen and (max-width: 561px) {
+      .land__covid .content__barcode .\--item {
+        width: 100%;
+        margin-bottom: 60px !important; } }
+    .land__covid .content__barcode .\--item .\--title {
+      color: var(--charcoal-grey);
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 30px; }
+      .land__covid .content__barcode .\--item .\--title p {
+        margin: 0; }
+      .land__covid .content__barcode .\--item .\--title img {
+        width: 30px;
+        margin: 0;
+        margin-right: 10px; }
+  .land__covid .content__barcode .\--adress {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px; }
+  .land__covid .content__barcode .\--input-adress {
+    background: var(--white);
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 60px; }
+    .land__covid .content__barcode .\--input-adress input {
+      border-color: white;
+      border: 1px solid white;
+      border-radius: 60px;
+      outline: none;
+      width: 300px;
+      height: 40px;
+      padding: 0px 20px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+      @media only screen and (max-width: 561px) {
+        .land__covid .content__barcode .\--input-adress input {
+          width: 100%; } }
+    .land__covid .content__barcode .\--input-adress img {
+      width: 15px;
+      margin: 0; }
+    .land__covid .content__barcode .\--input-adress .tooltip {
+      position: relative;
+      display: inline-block;
+      top: 10px;
+      right: 10px; }
+      .land__covid .content__barcode .\--input-adress .tooltip.tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: var(--white);
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s; }
+        .land__covid .content__barcode .\--input-adress .tooltip.tooltiptext::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent; }
+      .land__covid .content__barcode .\--input-adress .tooltip button {
+        background: transparent;
+        border: none; }
+      .land__covid .content__barcode .\--input-adress .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1; }
+  .land__covid .content__barcode .\--bajada {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px; }
+  .land__covid .content__barcode img {
+    margin-bottom: 30px;
+    width: 300px; }
+  .land__covid .content__barcode .\--title {
+    font-weight: 900;
+    font-size: 34px;
+    color: #6d07e6;
+    margin-bottom: 0; }
+  .land__covid .content__barcode .\--list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 45px; }
+    @media only screen and (max-width: 561px) {
+      .land__covid .content__barcode .\--list {
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 67px;
+        margin-bottom: 0px; } }
+  .land__covid .content__balance .\--list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 45px; }
+    @media only screen and (max-width: 561px) {
+      .land__covid .content__balance .\--list {
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 67px;
+        margin-bottom: 0px; } }
+    .land__covid .content__balance .\--list .\--item {
+      margin-bottom: 35px;
+      width: 33%; }
+      @media only screen and (max-width: 561px) {
+        .land__covid .content__balance .\--list .\--item {
+          width: 100%;
+          margin-bottom: 40px !important; } }
+      .land__covid .content__balance .\--list .\--item:nth-child(2):before {
+        background-color: var(--charcoal-grey);
+        content: "";
+        display: none;
+        right: 0;
+        width: 2px;
+        height: 80px; }
+        @media only screen and (max-width: 561px) {
+          .land__covid .content__balance .\--list .\--item:nth-child(2):before {
+            display: none; } }
+      .land__covid .content__balance .\--list .\--item:nth-child(2):after {
+        background-color: var(--charcoal-grey);
+        content: "";
+        left: 0;
+        width: 2px;
+        height: 80px; }
+        @media only screen and (max-width: 561px) {
+          .land__covid .content__balance .\--list .\--item:nth-child(2):after {
+            display: none; } }
+      .land__covid .content__balance .\--list .\--item img {
+        margin-top: 7px;
+        margin-bottom: 30px;
+        width: 80px;
+        height: 80px; }
+        @media only screen and (max-width: 561px) {
+          .land__covid .content__balance .\--list .\--item img {
+            width: 120px;
+            height: 120px; } }
+      .land__covid .content__balance .\--list .\--item .\--title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 5px; }
+      .land__covid .content__balance .\--list .\--item .\--balance {
+        font-weight: 300;
+        font-size: 16px; }
+  .land__control {
+    margin: 0px; }
+    .land__control.\--fa .icon__product {
+      width: 418px !important;
+      position: initial; }
+      @media only screen and (max-width: 561px) {
+        .land__control.\--fa .icon__product {
+          width: 100% !important;
+          margin: 0px !important; } }
+  .land__control .content__product {
+    flex-direction: row-reverse; }
+    @media only screen and (max-width: 561px) {
+      .land__control .content__product {
+        display: flex;
+        flex-direction: column-reverse; } }
+    .land__control .content__product .text__product .\--title {
+      padding-left: 70px; }
+      @media only screen and (max-width: 561px) {
+        .land__control .content__product .text__product .\--title {
+          padding: 0px; } }
+    .land__control .content__product .text__product .\--bajada {
+      padding-left: 70px;
+      padding-right: 0px; }
+      @media only screen and (max-width: 561px) {
+        .land__control .content__product .text__product .\--bajada {
+          padding: 0px; } }
+  .land__control .icon__product {
+    left: 0; }
+    @media only screen and (max-width: 561px) {
+      .land__control .icon__product {
+        z-index: -1 !important;
+        width: 120% !important;
+        margin-bottom: 30px;
+        position: initial !important;
+        margin-left: -180px; }
+        .land__control .icon__product img {
+          width: 80% !important; } }
+  .land__valores {
+    margin-top: 3rem; }
+    .land__valores .content__valores {
+      margin-top: 5rem;
+      align-self: flex-start; }
+      @media only screen and (max-width: 561px) {
+        .land__valores .content__valores {
+          margin-top: 0rem !important; } }
+      .land__valores .content__valores .\--title {
+        font-weight: 900;
+        font-size: 34px;
+        text-align: left;
+        margin-bottom: 1rem; }
+        @media only screen and (max-width: 561px) {
+          .land__valores .content__valores .\--title {
+            text-align: center; } }
+      .land__valores .content__valores .\--bajada {
+        font-weight: 300;
+        font-size: 20px;
+        text-align: left; }
+        @media only screen and (max-width: 561px) {
+          .land__valores .content__valores .\--bajada {
+            text-align: center; } }
+    .land__valores.\--learn .\--title {
+      text-align: center !important; }
+    .land__valores.\--learn .\--bajada {
+      text-align: center !important; }
+    .land__valores .cards__valores {
+      margin-top: 69px; }
+      @media only screen and (max-width: 561px) {
+        .land__valores .cards__valores {
+          overscroll-behavior-x: contain;
+          display: flex;
+          overflow-x: auto;
+          flex-wrap: initial;
+          justify-content: flex-start;
+          grid-column: auto / span 2;
+          width: 100%;
+          padding: 20px;
+          margin-top: 20px; } }
+      .land__valores .cards__valores .content__card {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        width: calc(300px - 72px);
+        padding: 40px 36px;
+        color: var(--charcoal-grey);
+        margin: 0px 20px 20px 0px; }
+        @media only screen and (max-width: 561px) {
+          .land__valores .cards__valores .content__card {
+            min-width: 211px; } }
+        .land__valores .cards__valores .content__card:hover {
+          background: linear-gradient(0deg, rgba(248, 243, 255, 0.5), rgba(248, 243, 255, 0.5)), #FFFFFF;
+          box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.3);
+          transform: translateY(-10px);
+          transition-duration: .225s; }
+          .land__valores .cards__valores .content__card:hover h3, .land__valores .cards__valores .content__card:hover p {
+            color: #6d07e6; }
+        .land__valores .cards__valores .content__card h3 {
+          font-weight: 900;
+          font-size: 28px; }
+        .land__valores .cards__valores .content__card p {
+          font-weight: 300;
+          font-size: 20px;
+          margin-top: 19px;
+          margin-bottom: 29px; }
+        .land__valores .cards__valores .content__card:nth-last-child(1) {
+          margin: 0px 0px 20px 0px; }
+  .land__app {
+    margin-top: 5rem; }
+    .land__app .content__app .\--title {
+      font-weight: 900;
+      font-size: 34px; }
+    .land__app .content__app svg.\--line {
+      transform: translateX(-22px);
+      margin-bottom: 50px;
+      margin-top: 45px; }
+    .land__app .content__app .\--list {
+      list-style: none;
+      padding-left: 0px;
+      margin: 0px;
+      margin-bottom: 55px; }
+      .land__app .content__app .\--list .\--item {
+        margin-bottom: 35px; }
+        .land__app .content__app .\--list .\--item .\--number {
+          background: rgba(62, 37, 141, 0.15);
+          padding: 8px 13px;
+          font-weight: bold;
+          font-size: 16px;
+          margin-right: 15px;
+          width: 35px;
+          height: 35px;
+          border-radius: 100%; }
+        .land__app .content__app .\--list .\--item .\--text {
+          font-size: 1.5rem;
+          font-weight: 700; }
+  .land__mockups .content__mockup {
+    margin-top: 261px; }
+    .land__mockups .content__mockup .\--title {
+      font-weight: 900;
+      font-size: 35px;
+      line-height: 42px; }
+    .land__mockups .content__mockup .\--bajada {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 20px;
+      margin-bottom: 62px; }
+  .land__more_info {
+    margin-top: 500px; }
+    .land__more_info .content__more_info .\--title {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px; }
+    .land__more_info .content__more_info .\--bajada {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 40px;
+      margin-bottom: 73px; }
+    .land__more_info .content__more_info .link {
+      margin-top: 63px; }
+  .land__steps {
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    @media only screen and (max-width: 561px) {
+      .land__steps {
+        margin-bottom: 0px;
+        margin-top: 0px; } }
+    .land__steps .\--title {
+      font-weight: 900;
+      font-size: 34px;
+      color: #6d07e6;
+      margin-bottom: 0; }
+    .land__steps .\--bajada {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px; }
+    .land__steps .content__steps .\--list {
+      list-style: none;
+      padding-left: 0px;
+      margin: 0px;
+      margin-bottom: 55px;
+      margin-top: 42px; }
+      @media only screen and (max-width: 561px) {
+        .land__steps .content__steps .\--list {
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 67px;
+          margin-bottom: 0px; } }
+      .land__steps .content__steps .\--list .\--item {
+        margin-bottom: 35px;
+        flex: 1;
+        margin: auto 55px auto 0 !important; }
+        @media only screen and (max-width: 561px) {
+          .land__steps .content__steps .\--list .\--item {
+            width: 100%;
+            margin-bottom: 40px !important; } }
+        .land__steps .content__steps .\--list .\--item:nth-child(3) {
+          margin: auto 0px auto 0 !important; }
+        .land__steps .content__steps .\--list .\--item .\--number {
+          background: #FFD371;
+          font-weight: bold;
+          font-size: 16px;
+          width: 35px;
+          height: 35px;
+          border-radius: 100%; }
+          @media only screen and (max-width: 561px) {
+            .land__steps .content__steps .\--list .\--item .\--number {
+              align-self: center;
+              margin-bottom: 20px; } }
+        .land__steps .content__steps .\--list .\--item img {
+          margin-top: 7px;
+          margin-bottom: 30px; }
+        .land__steps .content__steps .\--list .\--item .\--text {
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 29px; }
+        .land__steps .content__steps .\--list .\--item .\--bajada {
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 24px; }
+    .land__steps.\--features {
+      margin-top: 40px !important; }
+      .land__steps.\--features .miscelanea_line {
+        display: none; }
+      .land__steps.\--features .content__steps .\--list {
+        margin-top: 0; }
+        .land__steps.\--features .content__steps .\--list .\--item {
+          margin: 0px 55px 0px 0 !important;
+          margin-top: 0px;
+          text-align: center;
+          justify-content: center;
+          align-items: center; }
+          .land__steps.\--features .content__steps .\--list .\--item:nth-child(3) {
+            margin: auto 0px auto 0 !important; }
+          .land__steps.\--features .content__steps .\--list .\--item img {
+            margin-top: 0px !important; }
+          @media only screen and (max-width: 561px) {
+            .land__steps.\--features .content__steps .\--list .\--item {
+              align-items: center;
+              text-align: center; } }
+      @media only screen and (max-width: 561px) {
+        .land__steps.\--features {
+          margin-bottom: 65px; } }
+    .land__steps.\--security .miscelanea_line {
+      display: none; }
+    .land__steps.\--security .content__steps .\--list .\--item {
+      margin-top: 0px;
+      text-align: left;
+      justify-content: start;
+      align-items: flex-start; }
+      .land__steps.\--security .content__steps .\--list .\--item img {
+        margin-top: 0px !important; }
+      @media only screen and (max-width: 561px) {
+        .land__steps.\--security .content__steps .\--list .\--item {
+          align-items: center;
+          text-align: center; } }
+    @media only screen and (max-width: 561px) {
+      .land__steps.\--security {
+        margin-bottom: 65px; } }
+    .land__steps.\--institucional .content__steps .\--title {
+      align-self: flex-start; }
+    .land__steps.\--institucional .content__steps .\--list .\--item {
+      width: 45%;
+      max-width: 45%;
+      flex: auto;
+      margin: 0px 30px 100px 0 !important;
+      justify-content: space-between;
+      align-items: flex-start; }
+      @media only screen and (max-width: 561px) {
+        .land__steps.\--institucional .content__steps .\--list .\--item {
+          width: 100%;
+          max-width: 100%;
+          align-items: center; } }
+      .land__steps.\--institucional .content__steps .\--list .\--item p {
+        text-align: left; }
+        @media only screen and (max-width: 561px) {
+          .land__steps.\--institucional .content__steps .\--list .\--item p {
+            text-align: center; } }
+    .land__steps.\--institucional .content__steps .\--content {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column; }
+      @media only screen and (max-width: 561px) {
+        .land__steps.\--institucional .content__steps .\--content {
+          align-items: center; } }
+  .land__info .content__info {
+    margin-bottom: 115px;
+    margin-top: 370px; }
+    .land__info .content__info h2 {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 43px; }
+    .land__info .content__info p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px; }
+  .land__info .cards__learn .content__card {
+    padding: 48px 27px 42px 38px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-bottom: 300px; }
+    .land__info .cards__learn .content__card h4 {
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 26px; }
+    .land__info .cards__learn .content__card p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px; }
+    .land__info .cards__learn .content__card img {
+      margin-bottom: 25px;
+      width: 62px; }
+  .land__module {
+    margin-bottom: 372px; }
+    .land__module .content__module .\--title {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 43px; }
+    .land__module .content__module .\--text {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px; }
+  @media only screen and (max-width: 561px) {
+    .land__cripto {
+      text-align: center;
+      margin-top: 54px; } }
+  .land__cripto .content__cripto {
+    margin-bottom: 7rem;
+    margin-top: 5rem; }
+    .land__cripto .content__cripto h2 {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+      margin-bottom: 1rem; }
+      @media only screen and (max-width: 561px) {
+        .land__cripto .content__cripto h2 {
+          margin-bottom: 1rem; } }
+    .land__cripto .content__cripto p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center; }
+      @media only screen and (max-width: 561px) {
+        .land__cripto .content__cripto p {
+          text-align: center; } }
+    @media only screen and (max-width: 561px) {
+      .land__cripto .content__cripto {
+        margin-top: 0px;
+        margin-bottom: 0px; } }
+  .land__cripto .cards__learn {
+    flex-direction: row;
+    min-height: auto; }
+    @media only screen and (max-width: 561px) {
+      .land__cripto .cards__learn {
+        overscroll-behavior-x: contain;
+        direction: ltr;
+        overflow-x: auto;
+        flex-wrap: initial;
+        justify-content: flex-start;
+        grid-column: auto / span 2;
+        width: 100%;
+        padding: 20px;
+        padding-top: 90px;
+        margin-left: -19px; } }
+    .land__cripto .cards__learn .content__card {
+      background: #FFFFFF;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      width: 100%;
+      padding: 40px 36px;
+      color: var(--charcoal-grey);
+      margin: 0px 20px 20px 0px; }
+      @media only screen and (max-width: 561px) {
+        .land__cripto .cards__learn .content__card {
+          min-width: 211px;
+          margin: 0px 20px 20px 0px; } }
+      .land__cripto .cards__learn .content__card:hover {
+        background: linear-gradient(0deg, rgba(248, 243, 255, 0.5), rgba(248, 243, 255, 0.5)), #FFFFFF;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.3);
+        transform: translateY(-10px);
+        transition-duration: .225s; }
+        .land__cripto .cards__learn .content__card:hover h4, .land__cripto .cards__learn .content__card:hover p {
+          color: #6d07e6; }
+      .land__cripto .cards__learn .content__card h4 {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 26px;
+        margin-top: -85px; }
+      .land__cripto .cards__learn .content__card p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 22px; }
+      .land__cripto .cards__learn .content__card img {
+        transform: translateY(-90%);
+        width: 120px !important; }
+      .land__cripto .cards__learn .content__card .\--container .price .\--sell {
+        margin-top: 20px;
+        display: block;
+        font-size: 28px;
+        color: black;
+        line-height: 34px;
+        font-weight: bold; }
+      .land__cripto .cards__learn .content__card .\--container .price .\--variation {
+        font-size: 18px;
+        line-height: 22px;
+        display: block;
+        color: var(--white);
+        font-weight: bold;
+        margin-bottom: 29px; }
+        .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--up, .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--positive {
+          color: #1EDEAA; }
+          .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--up:after, .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--positive:after {
+            content: " % " "\2191"; }
+          .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--up:before, .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--positive:before {
+            content: '+'; }
+        .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--down, .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--nevative {
+          color: #FF0050; }
+          .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--down:after, .land__cripto .cards__learn .content__card .\--container .price .\--variation.\--nevative:after {
+            content: " % " "\2193"; }
+      .land__cripto .cards__learn .content__card.Bitcoin {
+        order: 0; }
+      .land__cripto .cards__learn .content__card.Ethereum {
+        order: 1; }
+      .land__cripto .cards__learn .content__card.Dai {
+        order: 2; }
+    .land__cripto .cards__learn .link {
+      margin-bottom: 300px; }
+  .bg__content--product .menu {
+    color: var(--white); }
+  .menu--responsive {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    overflow: scroll;
+    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    background: white;
+    padding-bottom: 30px;
+    transition: left .225s ease;
+    box-shadow: 0px 3.78839px 15.1536px rgba(0, 0, 0, 0.15);
+    z-index: 999999;
+    left: -100vw; }
+    .menu--responsive .menu__left, .menu--responsive .menu__right {
+      flex-direction: column; }
+    .menu--responsive .menu__left {
+      text-align: center;
+      overflow-y: scroll; }
+      .menu--responsive .menu__left ul {
+        list-style: none;
+        padding: 0px; }
+        .menu--responsive .menu__left ul li a {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          text-decoration: none;
+          color: var(--charcoal-grey); }
+      .menu--responsive .menu__left .menu__item hr {
+        width: 80vw;
+        border: .5px solid #E4E4E4;
+        margin: 30px 0; }
+        .menu--responsive .menu__left .menu__item hr.last {
+          border: 0.5px solid var(--white); }
+      .menu--responsive .menu__left .menu__item img {
+        filter: brightness(1); }
+      .menu--responsive .menu__left .menu__item div > a {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 29px;
+        color: var(--charcoal-grey);
+        text-decoration: none; }
+      .menu--responsive .menu__left .menu__item:nth-child(1) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+        position: fixed;
+        background-color: white; }
+        .menu--responsive .menu__left .menu__item:nth-child(1) img {
+          margin-left: 2rem; }
+        .menu--responsive .menu__left .menu__item:nth-child(1) span img {
+          margin-right: 2rem; }
+      .menu--responsive .menu__left .menu__item:nth-child(2) {
+        margin-top: 100px; }
+    .menu--responsive .menu__right {
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-bottom: 6rem; }
+      .menu--responsive .menu__right .menu__item {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .menu--responsive .menu__right .menu__item a {
+          width: 80%;
+          padding: 10px 10px 20px 10px !important; }
+        .menu--responsive .menu__right .menu__item:nth-child(1) {
+          margin-top: 20px; }
+        .menu--responsive .menu__right .menu__item:nth-child(2) a {
+          width: 75%; }
+    .menu--responsive.\--open {
+      left: 0vw; }
+  .land__news {
+    color: var(--white);
+    height: calc(100vh - 154px); }
+    @media only screen and (max-width: 561px) {
+      .land__news {
+        text-align: center; } }
+    .land__news h1 {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 60px;
+      margin-top: 0px; }
+      @media only screen and (max-width: 561px) {
+        .land__news h1 {
+          font-size: 34px;
+          line-height: 41px;
+          margin: 0px; } }
+    .land__news .content__bajada {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px; }
+      @media only screen and (max-width: 561px) {
+        .land__news .content__bajada {
+          font-size: 20px; } }
+    .land__news .content__newsletter {
+      margin-top: 114px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); }
+      @media only screen and (max-width: 561px) {
+        .land__news .content__newsletter {
+          box-shadow: none;
+          width: 90vw;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          padding: 0px; } }
+      .land__news .content__newsletter .input__newsletter {
+        width: 460px;
+        height: 42px;
+        border: none;
+        border-bottom: 1px solid #373744;
+        margin-right: 20px;
+        outline: none; }
+        @media only screen and (max-width: 561px) {
+          .land__news .content__newsletter .input__newsletter {
+            width: 100%;
+            margin: auto; } }
+      @media only screen and (max-width: 561px) {
+        .land__news .content__newsletter .button {
+          margin-top: 37px; } }
+    .land__news.h100_calculadora {
+      height: calc(100vh - 140px);
+      justify-content: space-evenly; }
+  .bg__content--calculadora .land__news {
+    color: var(--charcoal-grey); }
+  .bg__content--cotizacion .land__news {
+    height: auto;
+    margin-top: 80px; }
+  .land__content.\--compra__btc {
+    color: var(--white);
+    height: calc(100vh - 35px); }
+    @media only screen and (max-width: 561px) {
+      .land__content.\--compra__btc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    .land__content.\--compra__btc .content__left, .land__content.\--compra__btc .content__right {
+      height: auto;
+      margin: 80px 34px 60px 0px; }
+    .land__content.\--compra__btc .content__right {
+      height: auto;
+      margin: 80px 0px 60px 34px; }
+    @media only screen and (max-width: 561px) {
+      .land__content.\--compra__btc .content__left {
+        margin: 34px 34px 0px 34px; } }
+    @media only screen and (max-width: 561px) {
+      .land__content.\--compra__btc .content__left p {
+        font-size: 1.3rem; } }
+  .land__content.\--cotizacion .content__left {
+    height: 40vh;
+    color: var(--white);
+    align-items: center;
+    margin-right: 0px;
+    justify-content: center !important; }
+    @media only screen and (max-width: 561px) {
+      .land__content.\--cotizacion .content__left {
+        height: 25vh; } }
+  .land__content.\--cotizacion .\--variation.my4, .land__content.\--cotizacion .land__nosotros .content__nosotros .\--variation.\--photo, .land__nosotros .content__nosotros .land__content.\--cotizacion .\--variation.\--photo, .land__content.\--cotizacion .land__learn .cards__learn .content__card img.\--variation, .land__learn .cards__learn .content__card .land__content.\--cotizacion img.\--variation, .land__content.\--cotizacion .\--variation.content__graphic, .land__content.\--cotizacion .rate.my4, .land__content.\--cotizacion .land__nosotros .content__nosotros .rate.\--photo, .land__nosotros .content__nosotros .land__content.\--cotizacion .rate.\--photo, .land__content.\--cotizacion .land__learn .cards__learn .content__card img.rate, .land__learn .cards__learn .content__card .land__content.\--cotizacion img.rate, .land__content.\--cotizacion .rate.content__graphic {
+    height: 30vh; }
+  .land__content--banner {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px; }
+  @media only screen and (max-width: 561px) {
+    .land__converter {
+      margin-top: 10vh; } }
+  @media only screen and (max-width: 561px) {
+    .land__converter.\--compra {
+      margin-top: 10vh; } }
+  .land__learn .content__learn, .land__learn .\--home .content__learn {
+    margin-bottom: 70px; }
+    .land__learn .content__learn h2, .land__learn .\--home .content__learn h2 {
+      font-weight: 900;
+      font-size: 34px;
+      margin-bottom: 1rem !important;
+      text-align: center;
+      color: #6d07e6; }
+    .land__learn .content__learn p, .land__learn .\--home .content__learn p {
+      font-weight: 300;
+      font-size: 20px;
+      text-align: center; }
+  .land__learn .cards__learn, .land__learn .\--home .cards__learn {
+    margin-top: 5rem; }
+    .land__learn .cards__learn .content__card, .land__learn .\--home .cards__learn .content__card {
+      padding: 0px 33px 42px 33px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 15px; }
+      .land__learn .cards__learn .content__card h4, .land__learn .\--home .cards__learn .content__card h4 {
+        font-weight: 900;
+        font-size: 24px;
+        margin-top: -15px; }
+      .land__learn .cards__learn .content__card p, .land__learn .\--home .cards__learn .content__card p {
+        font-weight: 300;
+        font-size: 20px; }
+  .land__cripto-world {
+    margin-top: 5rem; }
+    .land__cripto-world .cripto-world__content {
+      margin-top: 220px; }
+      @media only screen and (max-width: 561px) {
+        .land__cripto-world .cripto-world__content {
+          margin-top: 130px; } }
+      .land__cripto-world .cripto-world__content--text {
+        color: var(--white); }
+        @media only screen and (max-width: 561px) {
+          .land__cripto-world .cripto-world__content--text {
+            text-align: center; } }
+        .land__cripto-world .cripto-world__content--text h2 {
+          font-weight: 900;
+          font-size: 34px;
+          line-height: 41px; }
+        .land__cripto-world .cripto-world__content--text p {
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 24px; }
+        .land__cripto-world .cripto-world__content--text:after {
+          content: '';
+          background: var(--white);
+          bottom: -60px;
+          width: 30px;
+          height: 3px; }
+          @media only screen and (max-width: 561px) {
+            .land__cripto-world .cripto-world__content--text:after {
+              left: 50%;
+              transform: translate(-50%, 50%); } }
+      .land__cripto-world .cripto-world__content--image {
+        top: -23px;
+        height: 510px;
+        z-index: -1; }
+        @media only screen and (max-width: 1025px) {
+          .land__cripto-world .cripto-world__content--image {
+            display: none; } }
+        .land__cripto-world .cripto-world__content--image img {
+          width: auto;
+          height: 510px; }
+  .land__learn.\--home .content__learn {
+    margin: 5vh 0px 0px 0px; }
+    .land__learn.\--home .content__learn h2, .land__learn.\--home .content__learn p {
+      margin: 0px; }
+  .land__learn.\--home .cards__learn {
+    display: block !important;
+    margin: 0px 0px 20vh 0px; }
+    .land__learn.\--home .cards__learn p, .land__learn.\--home .cards__learn h4 {
+      margin: 0px; }
+    .land__learn.\--home .cards__learn .content__card {
+      margin-top: 40px; }
+      .land__learn.\--home .cards__learn .content__card img {
+        transform: translateY(0%); }
+      .land__learn.\--home .cards__learn .content__card .description {
+        margin-left: 45px; }
+  .land__nos .content__nos {
+    height: auto;
+    margin-top: 129px;
+    margin-bottom: 75px; }
+    @media only screen and (max-width: 561px) {
+      .land__nos .content__nos {
+        margin-top: 63px;
+        margin-bottom: 70px; } }
+    .land__nos .content__nos h1 {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 60px; }
+      @media only screen and (max-width: 561px) {
+        .land__nos .content__nos h1 {
+          font-size: 34px;
+          line-height: 41px; } }
+    .land__nos .content__nos h2 {
+      font-weight: 900;
+      font-size: 34px;
+      line-height: 41px;
+      color: #6d07e6; }
+    .land__nos .content__nos p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px; }
+      @media only screen and (max-width: 561px) {
+        .land__nos .content__nos p br {
+          display: none; } }
+    .land__nos .content__nos h2 {
+      font-weight: 900;
+      font-size: 34px;
+      line-height: 41px; }
+    .land__nos .content__nos h3 {
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 34px; }
+  .land__nos .content__data .\--list {
+    height: 463px; }
+    .land__nos .content__data .\--list li {
+      flex: 1; }
+      .land__nos .content__data .\--list li:nth-child(2) .\--content {
+        z-index: 9999; }
+      .land__nos .content__data .\--list li:nth-child(2) .\--image {
+        top: 0; }
+        @media only screen and (max-width: 561px) {
+          .land__nos .content__data .\--list li:nth-child(2) .\--image {
+            top: -32px; } }
+        @media only screen and (max-width: 561px) {
+          .land__nos .content__data .\--list li:nth-child(2) .\--image img {
+            width: 289px;
+            height: 289px; } }
+      .land__nos .content__data .\--list li .\--content .\--numbers {
+        font-weight: 900;
+        font-size: 75px;
+        line-height: 90px;
+        color: var(--purply-blue); }
+        @media only screen and (max-width: 561px) {
+          .land__nos .content__data .\--list li .\--content .\--numbers {
+            font-size: 50px;
+            line-height: 60px; } }
+      .land__nos .content__data .\--list li .\--content .\--description {
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 34px; }
+        @media only screen and (max-width: 561px) {
+          .land__nos .content__data .\--list li .\--content .\--description {
+            font-size: 20px;
+            line-height: 24px; } }
+    .land__nos .content__data .\--list:nth-child(2) li .\--content {
+      z-index: 9999; }
+    .land__nos .content__data .\--list:nth-child(2) li .\--image {
+      top: 0; }
+      @media only screen and (max-width: 561px) {
+        .land__nos .content__data .\--list:nth-child(2) li .\--image {
+          top: -32px; } }
+      @media only screen and (max-width: 561px) {
+        .land__nos .content__data .\--list:nth-child(2) li .\--image img {
+          width: 289px;
+          height: 289px; } }
+    @media only screen and (max-width: 561px) {
+      .land__nos .content__data .\--list:nth-child(2) {
+        flex-direction: column-reverse; } }
+    @media only screen and (max-width: 561px) {
+      .land__nos .content__data .\--list {
+        flex-direction: column; } }
+  .land__como-comprar, .land__products {
+    flex-direction: column; }
+    .land__como-comprar .\--bajada, .land__products .\--bajada {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px; }
+    .land__como-comprar .content__product, .land__products .content__product {
+      margin: 130px 0 170px 0; }
+      .land__como-comprar .content__product .\--bajada, .land__products .content__product .\--bajada {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px; }
+      .land__como-comprar .content__product .text__product, .land__products .content__product .text__product {
+        flex: 1; }
+        .land__como-comprar .content__product .text__product .\--title, .land__products .content__product .text__product .\--title {
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 36px; }
+        .land__como-comprar .content__product .text__product .\--bajada, .land__products .content__product .text__product .\--bajada {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 22px; }
+          @media only screen and (max-width: 561px) {
+            .land__como-comprar .content__product .text__product .\--bajada br, .land__products .content__product .text__product .\--bajada br {
+              display: none; } }
+        @media only screen and (max-width: 561px) {
+          .land__como-comprar .content__product .text__product, .land__products .content__product .text__product {
+            text-align: center; } }
+      .land__como-comprar .content__product .icon__product, .land__products .content__product .icon__product {
+        flex: 1; }
+        @media only screen and (max-width: 561px) {
+          .land__como-comprar .content__product .icon__product, .land__products .content__product .icon__product {
+            margin-bottom: 50px !important; }
+            .land__como-comprar .content__product .icon__product img, .land__products .content__product .icon__product img {
+              width: 80%; } }
+      .land__como-comprar .content__product:nth-child(odd), .land__products .content__product:nth-child(odd) {
+        flex-direction: row-reverse; }
+        @media only screen and (max-width: 561px) {
+          .land__como-comprar .content__product:nth-child(odd), .land__products .content__product:nth-child(odd) {
+            flex-direction: column-reverse; } }
+      @media only screen and (max-width: 561px) {
+        .land__como-comprar .content__product, .land__products .content__product {
+          flex-direction: column-reverse;
+          margin: 0px 0 130px 0; }
+          .land__como-comprar .content__product:nth-child(2), .land__products .content__product:nth-child(2) {
+            margin-top: 250px; } }
+  .land__terms p, .land__terms ol {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px; }
+  .land__terms ul, .land__terms h2 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px; }
+  .land__terms ul {
+    list-style: none;
+    padding: 0px; }
+    .land__terms ul li {
+      margin-top: 70px; }
+      .land__terms ul li ul {
+        list-style: initial;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        -webkit-padding-start: 40px;
+                padding-inline-start: 40px; }
+        .land__terms ul li ul li {
+          margin-top: 0px; }
+  .land__content--banner {
+    height: 262px; }
+    .land__content--banner h1 {
+      font-weight: 900;
+      font-size: 50px;
+      text-align: center;
+      width: 70%;
+      line-height: 60px;
+      color: var(--white); }
+      @media only screen and (max-width: 561px) {
+        .land__content--banner h1 {
+          font-size: 30px;
+          width: 100%;
+          line-height: 40px; } }
+    .land__content--banner p {
+      font-size: 18px; }
+    @media only screen and (max-width: 561px) {
+      .land__content--banner {
+        align-items: center; } }
+  .land__content--donacion {
+    margin-top: 80px;
+    height: auto; }
+    .land__content--donacion h1 {
+      font-weight: 900;
+      font-size: 50px;
+      text-align: center;
+      width: 70%;
+      line-height: 60px;
+      color: var(--white);
+      margin: 0.67em 0 0 !important; }
+      @media only screen and (max-width: 561px) {
+        .land__content--donacion h1 {
+          font-size: 30px;
+          width: 100%;
+          line-height: 40px; } }
+    .land__content--donacion p {
+      text-align: center;
+      color: var(--white);
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px; }
+    @media only screen and (max-width: 561px) {
+      .land__content--donacion {
+        align-items: center;
+        margin-top: 20px; }
+        .land__content--donacion img {
+          width: 90%; } }
+    .land__content--donacion .content__nav {
+      margin-top: 35px; }
+      @media only screen and (max-width: 561px) {
+        .land__content--donacion .content__nav {
+          margin-top: 15px; } }
+      .land__content--donacion .content__nav .button {
+        padding: 20px 35px; }
+        @media only screen and (max-width: 561px) {
+          .land__content--donacion .content__nav .button {
+            padding: 15px 25px; } }
+    .land__content--donacion .content__nav a:first-child {
+      margin-right: 30px !important; }
+      @media only screen and (max-width: 561px) {
+        .land__content--donacion .content__nav a:first-child {
+          margin-right: 20px !important; } }
+  .land__content--countries .list__item {
+    text-align: center; }
+  .land__content--countries .list__item--icon img {
+    filter: brightness(9); }
+  .land__content--countries h1 {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--white);
+    margin-bottom: 150px; }
+    @media only screen and (max-width: 561px) {
+      .land__content--countries h1 {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 70px; } }
+  .land__content--countries .list__item--nav {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    @media only screen and (max-width: 1025px) {
+      .land__content--countries .list__item--nav {
+        flex-direction: column; } }
+  .land__content--countries li {
+    text-decoration: none; }
+    @media only screen and (max-width: 1025px) {
+      .land__content--countries li {
+        margin-bottom: 20px; } }
+  .land__content--countries .rp-site-link {
+    background-color: var(--white);
+    position: relative;
+    color: #373744;
+    border-bottom: 0;
+    display: inline-block;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    min-width: 237px;
+    margin-right: 19px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px 18px 12px 45px;
+    transition: all .3s; }
+    .land__content--countries .rp-site-link:hover {
+      color: var(--white);
+      background: #3A2A88; }
+    .land__content--countries .rp-site-link:nth-child(3) {
+      margin-right: 0px; }
+    .land__content--countries .rp-site-link img {
+      position: absolute;
+      left: 8px;
+      top: 8px; }
+  @media only screen and (max-width: 561px) {
+    .land__content.\--wallet .content__left, .land__content.\--wallet .content__right, .land__content.\--security .content__left, .land__content.\--security .content__right {
+      align-items: center; } }
+  @media only screen and (max-width: 561px) {
+    .land__content.\--wallet .content__left h1, .land__content.\--security .content__left h1 {
+      font-size: 34px; } }
+  @media only screen and (max-width: 561px) {
+    .land__content.\--wallet .content__left, .land__content.\--security .content__left {
+      justify-content: start;
+      height: calc(100vh - 130px); } }
+  .land__content.\--security .content__left {
+    height: calc(70vh - 124px); }
+    @media only screen and (max-width: 561px) {
+      .land__content.\--security .content__left {
+        justify-content: center;
+        height: calc(60vh - 124px); } }
+  .land__products.\--wallet .\--title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px; }
+  .land__products.\--wallet .content__product {
+    flex-direction: row;
+    margin: 100px 0 0px 0 !important; }
+    @media only screen and (max-width: 561px) {
+      .land__products.\--wallet .content__product {
+        flex-direction: column-reverse;
+        margin: 40px 0 0px 0 !important; } }
+    .land__products.\--wallet .content__product:nth-child(even) {
+      flex-direction: row-reverse; }
+      @media only screen and (max-width: 561px) {
+        .land__products.\--wallet .content__product:nth-child(even) {
+          flex-direction: column-reverse; } }
+    @media only screen and (max-width: 561px) {
+      .land__products.\--wallet .content__product .icon__product img {
+        width: 70%; } }
+    .land__products.\--wallet .content__product .text__product .\--title {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 40px; }
+      @media only screen and (max-width: 561px) {
+        .land__products.\--wallet .content__product .text__product .\--title {
+          font-size: 32px;
+          line-height: 42px; } }
+    .land__products.\--wallet .content__product .text__product .\--bajada {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px; }
+  .land__products.\--wallet.\--comprar .content__product {
+    flex-direction: row;
+    margin: 100px 0 0px 0 !important; }
+    @media only screen and (max-width: 561px) {
+      .land__products.\--wallet.\--comprar .content__product {
+        flex-direction: column-reverse; } }
+    .land__products.\--wallet.\--comprar .content__product .icon__product {
+      display: flex;
+      justify-content: flex-end; }
+      @media only screen and (max-width: 561px) {
+        .land__products.\--wallet.\--comprar .content__product .icon__product img {
+          width: 100%; } }
+    .land__products.\--wallet.\--comprar .content__product .text__product .\--bajada {
+      margin-bottom: 30px; }
+    .land__products.\--wallet.\--comprar .content__product .text__product .\--link {
+      text-decoration: none; }
+    .land__products.\--wallet.\--comprar .content__product:nth-child(odd) {
+      flex-direction: row-reverse; }
+      @media only screen and (max-width: 561px) {
+        .land__products.\--wallet.\--comprar .content__product:nth-child(odd) {
+          flex-direction: column-reverse; } }
+      .land__products.\--wallet.\--comprar .content__product:nth-child(odd) .text__product {
+        text-align: right; }
+        .land__products.\--wallet.\--comprar .content__product:nth-child(odd) .text__product .\--number {
+          align-self: flex-end; }
+        @media only screen and (max-width: 561px) {
+          .land__products.\--wallet.\--comprar .content__product:nth-child(odd) .text__product {
+            align-items: center;
+            text-align: center; } }
+      .land__products.\--wallet.\--comprar .content__product:nth-child(odd) .icon__product {
+        display: flex;
+        justify-content: flex-start; }
+  .land__sponsor {
+    margin-bottom: 90px; }
+    @media only screen and (max-width: 561px) {
+      .land__sponsor {
+        margin-bottom: 40px; } }
+    .land__sponsor h2 {
+      font-weight: 900;
+      font-size: 34px;
+      line-height: 41px;
+      color: #6d07e6; }
+      @media only screen and (max-width: 561px) {
+        .land__sponsor h2 {
+          text-align: center; } }
+    .land__sponsor ul {
+      list-style: none;
+      flex-wrap: wrap; }
+      @media only screen and (max-width: 561px) {
+        .land__sponsor ul {
+          display: flex;
+          overflow-x: auto;
+          flex-wrap: initial;
+          justify-content: flex-start;
+          grid-column: auto / span 2;
+          width: 100%;
+          padding: 20px;
+          margin-top: 20px; } }
+      .land__sponsor ul li {
+        width: 215px;
+        height: 157px;
+        border-radius: 10px;
+        background-color: #F8F3FF;
+        margin: 10px !important; }
+        .land__sponsor ul li a img {
+          width: 150px;
+          filter: grayscale(1); }
+        .land__sponsor ul li:hover {
+          background: #FFFFFF;
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15); }
+          .land__sponsor ul li:hover a > img {
+            filter: grayscale(0); }
+    .land__sponsor.\--prensa ul li {
+      width: 290px; }
+  .land__contacto {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 53px 92px;
+    margin-bottom: 70px; }
+    @media only screen and (max-width: 561px) {
+      .land__contacto {
+        padding: 53px 30px;
+        margin-bottom: 25px; } }
+    .land__contacto h2 {
+      font-weight: 900;
+      font-size: 34px;
+      margin: 0px;
+      line-height: 41px;
+      color: #6d07e6; }
+  .button {
+    font-weight: 500;
+    font-size: 0.88rem;
+    color: var(--charcoal-grey);
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 9px 18px; }
+    .button.\--outline {
+      border: 1px solid #6d07e6;
+      color: #6d07e6;
+      box-sizing: border-box;
+      border-radius: 50px; }
+      .button.\--outline.\--revert {
+        border: 1px solid #fff;
+        color: white !important;
+        font-weight: bold;
+        font-size: 0.88rem;
+        background-color: transparent;
+        background-image: none;
+        line-height: 14px; }
+      .button.\--outline.\--grey {
+        border: 1px solid var(--charcoal-grey);
+        color: var(--charcoal-grey);
+        font-weight: bold;
+        font-size: 0.88rem;
+        background-color: transparent;
+        line-height: 14px; }
+    .button.\--primary {
+      background-image: linear-gradient(to right, var(--purply-blue) 0%, var(--purply-blue) 50%, #8b43e0 100%);
+      color: white;
+      background-size: 200% 100%;
+      background-position: 0 0;
+      transition: background-position .333s ease; }
+      .button.\--primary:hover {
+        background-position: 100% 0;
+        transition: background-position .333s ease; }
+      .button.\--primary:active {
+        color: var(--white);
+        background-image: inherit;
+        background-color: var(--indigo); }
+    .button.\--revert {
+      line-height: 14px;
+      font-weight: bold;
+      font-size: 0.88rem;
+      background-image: linear-gradient(to right, var(--white) 0%, #E4D3FD 100%, #F8F3FF 100%);
+      color: #6d07e6 !important;
+      background-size: 200% 100%;
+      background-position: 0 0;
+      transition: background-position .333s ease; }
+      .button.\--revert:hover {
+        background-position: 100% 0;
+        transition: background-position .333s ease; }
+      .button.\--revert:active {
+        color: var(--white);
+        background-image: inherit;
+        background-color: var(--indigo); }
+    .button.\--medium {
+      width: 296px;
+      height: 24px;
+      line-height: 24px; }
+  .link {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.88rem;
+    line-height: normal;
+    color: var(--charcoal-grey);
+    text-decoration: none; }
+    .link.\--primary {
+      font-size: 1rem;
+      color: var(--purply-blue);
+      background: none; }
+  .menu {
+    margin-top: 20px;
+    z-index: 99999; }
+    @media only screen and (max-width: 561px) {
+      .menu {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        justify-content: center; } }
+    .menu__left .menu__item, .menu__right .menu__item {
+      margin-right: 10px; }
+      .menu__left .menu__item:first-child, .menu__right .menu__item:first-child {
+        margin-right: 36px; }
+        @media only screen and (max-width: 561px) {
+          .menu__left .menu__item:first-child, .menu__right .menu__item:first-child {
+            margin: 0px; } }
+      .menu__left .menu__item:last-child, .menu__right .menu__item:last-child {
+        margin-right: 0px; }
+      .menu__left .menu__item img, .menu__right .menu__item img {
+        filter: brightness(9); }
+    .menu a.link {
+      color: var(--white); }
+    @media only screen and (max-width: 561px) {
+      .menu__left {
+        justify-content: space-between;
+        width: 100%; } }
+  .bg__content--calculadora .menu a.link {
+    color: var(--charcoal-grey); }
+  .bg__content--calculadora .menu img {
+    filter: brightness(1); }
+  .svg-shape {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1; }
+    .svg-shape img {
+      -webkit-clip-path: url(#my-shape);
+      clip-path: url(#my-shape);
+      background: linear-gradient(325deg, #F8A1A0 34.69%, #F8A6A5 34.97%, #FBC6C5 37.12%, #FDDFDF 39.34%, #FEF1F1 41.64%, #FFFCFC 44.06%, #FFFFFF 46.81%, #FFFBFB 49.26%, #FEEFEF 51.77%, #FCDBDA 54.29%, #FABFBE 56.82%, #F8A1A0 58.93%);
+      opacity: 0.5;
+      width: 100vw; }
+  .credit__module {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    padding: 0px 31px 42px 31px;
+    width: 281px; }
+    .credit__module .\--icon {
+      transform: translateY(-50%);
+      margin-bottom: -44px; }
+  .\--variation {
+    color: var(--white); }
+    @media only screen and (max-width: 561px) {
+      .\--variation {
+        display: flex;
+        flex-direction: column;
+        color: var(--white); } }
+    @media only screen and (max-width: 561px) {
+      .\--variation .\--buy, .\--variation .\--sell, .\--variation .\--variation {
+        align-items: center; } }
+    .\--variation .\--buy .\--label, .\--variation .\--sell .\--label, .\--variation .\--variation .\--label {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px; }
+      @media only screen and (max-width: 561px) {
+        .\--variation .\--buy .\--label, .\--variation .\--sell .\--label, .\--variation .\--variation .\--label {
+          font-weight: 200;
+          margin-top: 30px; } }
+    .\--variation .\--buy .\--price, .\--variation .\--buy .rate, .\--variation .\--sell .\--price, .\--variation .\--sell .rate, .\--variation .\--variation .\--price, .\--variation .\--variation .rate {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 42px;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+    .\--variation .\--buy .\--price.usd, .\--variation .\--sell .\--price.usd, .\--variation .\--variation .\--price.usd {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px; }
+    .\--variation .\--variation.\--up .\--price, .\--variation .\--variation.\--positive .\--price {
+      color: #1EDEAA; }
+      .\--variation .\--variation.\--up .\--price:after, .\--variation .\--variation.\--positive .\--price:after {
+        content: "%" "\2191"; }
+      .\--variation .\--variation.\--up .\--price:before, .\--variation .\--variation.\--positive .\--price:before {
+        content: '+'; }
+    .\--variation .\--variation.\--down .\--price, .\--variation .\--variation.\--negative .\--price {
+      color: #FF0050; }
+      .\--variation .\--variation.\--down .\--price:after, .\--variation .\--variation.\--negative .\--price:after {
+        content: "%" "\2193"; }
+  .converter {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px; }
+    @media only screen and (max-width: 1025px) {
+      .converter {
+        background-color: none;
+        box-shadow: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+        margin-top: 40px;
+        margin-bottom: 30px; } }
+    @media only screen and (max-width: 1025px) {
+      .converter form {
+        flex-direction: column; } }
+    .converter form .select__content {
+      width: auto;
+      min-width: 113px; }
+      .converter form .select__content select {
+        color: var(--charcoal-grey);
+        background-color: transparent;
+        z-index: 999;
+        height: auto;
+        border: none; }
+        .converter form .select__content select:focus-within ~ svg.icon-chevron {
+          transform: rotate(180deg);
+          animation: all .225s ease; }
+      @media only screen and (max-width: 561px) {
+        .converter form .select__content {
+          width: 110px; }
+          .converter form .select__content select {
+            font-size: 30px; } }
+      .converter form .select__content svg.icon-chevron {
+        width: 1rem;
+        height: 1rem;
+        left: -1rem;
+        top: 0;
+        transform: rotate(0deg);
+        animation: all .225s ease; }
+    .converter form .input input {
+      width: 220px;
+      height: auto; }
+      @media only screen and (max-width: 561px) {
+        .converter form .input input {
+          width: 139px;
+          font-size: 30px;
+          line-height: 50px; } }
+    .converter form .converter__currency .input:first-child {
+      width: 154px; }
+      @media only screen and (max-width: 561px) {
+        .converter form .converter__currency .input:first-child {
+          width: auto; } }
+    @media only screen and (max-width: 561px) {
+      .converter form .converter__currency {
+        width: 100%; } }
+    .converter .button {
+      width: 240px; }
+      @media only screen and (max-width: 1025px) {
+        .converter .button {
+          width: 80%;
+          margin-top: 40px; } }
+  .select__content label {
+    width: 100%;
+    text-align: left;
+    overflow: hidden; }
+  .select__content select {
+    z-index: 999;
+    border-radius: 0;
+    border-bottom: 1px solid #b3b3b3;
+    height: 2.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    line-height: 2rem; }
+    .select__content select:focus, .select__content select:active {
+      border-bottom: 1px solid #6d07e6;
+      transition: border-bottom .5s ease;
+      outline: none; }
+    .select__content select option {
+      font-size: 14px !important; }
+    .select__content select:focus-within ~ svg {
+      transform: rotate(180deg);
+      animation: all .225s ease; }
+  .select__content svg {
+    width: 1rem;
+    height: 1rem;
+    left: 47%;
+    top: -35px;
+    transform: rotate(0deg);
+    transition: transform .225s ease; }
+  .select__content.\--open svg {
+    transform: rotate(180deg); }
+  .input.\--two .select__content select {
+    margin-top: 1px; }
+  .input.\--two .select__content svg {
+    left: 46%; }
+  .input {
+    text-align: left; }
+    .input span {
+      color: var(--bluey-grey);
+      opacity: 0.69; }
+    .input label {
+      color: var(--bluey-grey);
+      position: absolute;
+      top: 1em;
+      font-size: 1.5rem;
+      left: 0;
+      pointer-events: none; }
+    .input.input__address input {
+      font-size: 1rem !important;
+      text-align: left !important; }
+    .input.input__address label {
+      color: var(--bluey-grey);
+      font-size: .9rem !important;
+      pointer-events: none; }
+    .input.input__buy .input__content .input__buy--amount input {
+      height: 4rem; }
+    .input.input__buy .input__content .input__buy--amount label {
+      position: initial !important;
+      pointer-events: none; }
+    .input.input__buy .input__content .input__buy--amount div {
+      font-size: 1.5rem; }
+      .input.input__buy .input__content .input__buy--amount div .buy--equal {
+        font-size: 1.5rem;
+        color: var(--charcoal-grey);
+        opacity: 1; }
+    .input.input__buy .input__content .input__buy--amount label.\--error {
+      font-size: initial;
+      font-size: 0.65rem;
+      pointer-events: none; }
+    .input.input__buy.\--error + .input__buy--icon {
+      bottom: 85px; }
+    .input input {
+      border: none;
+      border-bottom: 1px solid var(--bluey-grey);
+      height: 2.5em;
+      z-index: 1; }
+      .input input.\--full {
+        width: 100%; }
+      .input input:focus {
+        border-bottom: 1px solid #6d07e6;
+        transition: border-bottom .5s ease; }
+        .input input:focus + label {
+          top: 0em;
+          font-size: 0.65rem !important;
+          transition: all .225s ease;
+          pointer-events: none; }
+      .input input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px white inset; }
+    .input .input__checkbox input {
+      width: 3em;
+      height: auto;
+      margin-top: 4px; }
+    .input.\--disabled {
+      opacity: 0.65; }
+      .input.\--disabled input {
+        cursor: not-allowed;
+        pointer-events: none; }
+    .input.\--success input, .input.\--success select {
+      border-bottom: 1px solid var(--aqua-green); }
+      .input.\--success input:focus, .input.\--success select:focus {
+        transition: border-bottom .5s ease; }
+      .input.\--success input + label, .input.\--success select + label {
+        top: 0em;
+        font-size: 0.65rem !important;
+        pointer-events: none; }
+    .input.\--error input, .input.\--error select {
+      border-bottom: 1px solid #ff0050; }
+      .input.\--error input:focus, .input.\--error select:focus {
+        border-bottom: 1px solid #ff0050;
+        transition: border-bottom .5s ease; }
+      .input.\--error input + label, .input.\--error select + label {
+        top: 0em;
+        font-size: 0.65rem !important;
+        pointer-events: none; }
+    .input.\--error span.\--error {
+      color: #ff0050;
+      opacity: 0.69; }
+    .input.\--two {
+      flex-direction: row; }
+      @media only screen and (max-width: 561px) {
+        .input.\--two {
+          flex-direction: column; } }
+      .input.\--two .input {
+        margin: 0px 10px 0px 0px; }
+        @media only screen and (max-width: 561px) {
+          .input.\--two .input {
+            margin: 16px 0px; } }
+    .input.\--phone {
+      width: 25% !important; }
+      @media only screen and (max-width: 561px) {
+        .input.\--phone {
+          width: 100% !important; } }
+  .land__about--cripto {
+    padding: 10% 10% 0 10%; }
+    .land__about--cripto img {
+      margin-right: 45px; }
+      @media only screen and (max-width: 769px) {
+        .land__about--cripto img {
+          margin-right: 0px;
+          width: 150px; } }
+    .land__about--cripto .\--content {
+      text-align: center; }
+      .land__about--cripto .\--content h2 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 0px; }
+        @media only screen and (max-width: 561px) {
+          .land__about--cripto .\--content h2 {
+            font-size: 26px; } }
+      .land__about--cripto .\--content p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px; }
+        @media only screen and (max-width: 769px) {
+          .land__about--cripto .\--content p {
+            margin: 0px 5%;
+            font-size: 18px; } }
+      .land__about--cripto .\--content a {
+        margin-top: 37px; }
+      @media only screen and (max-width: 769px) {
+        .land__about--cripto .\--content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 40px;
+          text-align: center; } }
+    @media only screen and (max-width: 769px) {
+      .land__about--cripto {
+        flex-direction: column;
+        margin-top: 80px !important; } }
+    .land__about--cripto .\--usdc {
+      text-align: center; }
+  .land__cripto--pair .cripto--pair .\--pair {
+    background: #ECECEC;
+    border-radius: 60px; }
+    .land__cripto--pair .cripto--pair .\--pair:hover {
+      background: #6D07E6;
+      color: white; }
+  .land__list {
+    min-height: 85vh; }
+    .land__list .list--title {
+      color: var(--white);
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase; }
+      .land__list .list--title div:nth-child(1) {
+        width: 35%; }
+      .land__list .list--title div {
+        width: 15%; }
+    .land__list .list--content {
+      display: grid; }
+      .land__list .list--content .row {
+        height: 50px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); }
+        .land__list .list--content .row div:nth-child(1) {
+          width: 35%; }
+          @media only screen and (max-width: 561px) {
+            .land__list .list--content .row div:nth-child(1) {
+              width: 100%; } }
+        .land__list .list--content .row div {
+          width: 15%; }
+          @media only screen and (max-width: 561px) {
+            .land__list .list--content .row div {
+              width: 25%; } }
+        .land__list .list--content .row:hover {
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          cursor: pointer; }
+        .land__list .list--content .row .price {
+          font-weight: bold;
+          color: #6D07E6; }
+        .land__list .list--content .row .\--positive {
+          color: #00A364; }
+          .land__list .list--content .row .\--positive:before {
+            content: '+'; }
+          .land__list .list--content .row .\--positive:after {
+            content: ' %'; }
+        .land__list .list--content .row .\--negative {
+          color: #E81F37; }
+          .land__list .list--content .row .\--negative:after {
+            content: ' %'; }
+        .land__list .list--content .row.Bitcoin {
+          order: 0; }
+        .land__list .list--content .row.Ethereum {
+          order: 1; }
+        .land__list .list--content .row.Dai {
+          order: 2; }
+        .land__list .list--content .row.Usdc {
+          order: 3; }
+        .land__list .list--content .row.LTC {
+          order: 4; }
+  .content__graphic {
+    margin-top: 15vh; }
+    .content__graphic h2 {
+      margin-bottom: 40px; }
+    .content__graphic .graphic {
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px 30px;
+      position: relative;
+      max-width: 780px;
+      width: 100%;
+      padding: 20px 30px; }
+      @media only screen and (max-width: 561px) {
+        .content__graphic .graphic {
+          width: 100%;
+          padding: 20px 0px; } }
+      .content__graphic .graphic__title {
+        color: #444; }
+        @media only screen and (max-width: 561px) {
+          .content__graphic .graphic__title {
+            justify-content: center; } }
+        .content__graphic .graphic__title .\--label {
+          font-size: 21px;
+          margin-bottom: 10px; }
+        .content__graphic .graphic__title img {
+          width: 35px;
+          height: 35px;
+          margin-right: 15px; }
+      .content__graphic .graphic__price {
+        color: #373d3f;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: "Lato", sans-serif;
+        position: absolute;
+        left: 50%;
+        top: 135px;
+        width: 100%;
+        transform: translate(-50%, -50%); }
+      .content__graphic .graphic__nav {
+        margin-top: 20px; }
+        .content__graphic .graphic__nav .btn {
+          cursor: pointer;
+          color: #ccd2e8;
+          margin: 1%;
+          padding: 3px 0px;
+          font-size: 12px;
+          font-weight: 400; }
+        .content__graphic .graphic__nav .\--select {
+          color: #6d07e6;
+          border-bottom: 2px solid #6d07e6; }
+      .content__graphic .graphic #chart {
+        max-width: 780px;
+        min-height: 370px; }
+  .apexcharts-legend-series {
+    margin: 0 !important; }
+  .apexcharts-legend-text {
+    background: white !important;
+    padding: 0px 60px; }
+  .footer {
+    color: var(--white); }
+    .footer .left__column {
+      margin-top: 5rem; }
+      .footer .left__column .left__content {
+        width: 195px; }
+        @media only screen and (max-width: 561px) {
+          .footer .left__column .left__content {
+            width: 100%;
+            justify-content: center;
+            text-align: center; } }
+        .footer .left__column .left__content h3 {
+          font-weight: 900;
+          font-size: 24px;
+          margin-bottom: 31px;
+          margin-top: 0px; }
+        .footer .left__column .left__content a:first-of-type {
+          margin-bottom: 15px; }
+    .footer .right__column {
+      margin-top: 5rem; }
+      @media only screen and (max-width: 769px) {
+        .footer .right__column {
+          flex-wrap: wrap;
+          flex-direction: column;
+          margin: auto;
+          width: 100%;
+          text-align: left; } }
+      .footer .right__column ul {
+        list-style: none;
+        padding-left: 0px;
+        margin-right: 94px;
+        width: 100%; }
+        .footer .right__column ul li {
+          font-size: 14px;
+          line-height: 32px; }
+          .footer .right__column ul li:first-of-type {
+            margin-top: 24px; }
+      .footer .right__column a {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: pointer; }
+      .footer .right__column .products__content .\--title, .footer .right__column .learn__content .\--title, .footer .right__column .company__content .\--title {
+        font-weight: 800; }
+        @media only screen and (max-width: 561px) {
+          .footer .right__column .products__content .\--title, .footer .right__column .learn__content .\--title, .footer .right__column .company__content .\--title {
+            margin: 30px auto; } }
+    .footer hr {
+      margin: 57px 0px 0px 0px;
+      border: 1px solid #F0E6FC; }
+      @media only screen and (max-width: 561px) {
+        .footer hr {
+          margin: 0px; } }
+    .footer .social__content {
+      margin-bottom: 80px;
+      margin-top: -5px;
+      /*  .ripio__content{
+            filter: brightness(0.2);
+        } */ }
+      @media only screen and (max-width: 769px) {
+        .footer .social__content {
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 70px; } }
+      .footer .social__content .disclaimer__content {
+        width: 540px;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        color: #F0E6FC; }
+        @media only screen and (max-width: 561px) {
+          .footer .social__content .disclaimer__content {
+            width: 100%;
+            font-size: 0.88rem;
+            font-weight: 200; } }
+      .footer .social__content .redes__content img {
+        margin-right: 14px; }
+      @media only screen and (max-width: 561px) {
+        .footer .social__content .redes__content {
+          margin-top: 14px;
+          margin-bottom: 33px; } }
+    .footer.\--covid .social__content {
+      flex-direction: column;
+      text-align: center; }
+    .footer.\--covid .disclaimer__content {
+      width: 100%;
+      margin-bottom: 30px; }
+    .footer.\--covid .redes__content {
+      margin-bottom: 30px; }
+    .footer.\--covid hr {
+      display: none; }
+  .tabs {
+    overflow: hidden;
+    height: 310px; }
+  .tab {
+    width: 100%;
+    min-height: 25px;
+    color: white;
+    overflow: hidden; }
+    .tab-label {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      cursor: pointer; }
+      .tab-label::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s; }
+    .tab-content {
+      max-height: 0;
+      opacity: 0;
+      padding: 0 1em;
+      color: var(--white);
+      background: transparent;
+      transition: all .35s; }
+    .tab-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+      font-size: 0.75em;
+      background: transparent;
+      cursor: pointer; }
+      .tab-close:hover {
+        background: #5605b5; }
+    .tab input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1; }
+    .tab input:checked + .tab-label::after {
+      transform: rotate(90deg); }
+    .tab input:checked ~ .tab-content {
+      max-height: 100vh;
+      opacity: 1;
+      padding: 1em 0; }
+  .row.right__column {
+    display: none !important; }
+    .row.right__column .col {
+      flex: 1; }
+      .row.right__column .col:last-child {
+        margin-left: 1em; }
+    @media only screen and (max-width: 769px) {
+      .row.right__column {
+        display: flex !important; } }
+  .dropdown .dropdown__button svg.icon-chevron {
+    transition: transform .5s ease;
+    transform: rotate(0deg); }
+    .dropdown .dropdown__button svg.icon-chevron path {
+      fill: var(--white); }
+  .dropdown .dropdown__button.\--light {
+    color: var(--white); }
+  .dropdown:hover .dropdown__list {
+    position: absolute;
+    box-shadow: 0 0 6px 2px #0000001f;
+    background-color: var(--white);
+    min-width: 200px;
+    margin-top: 5px; }
+  .dropdown:hover .dropdown__button svg.icon-chevron {
+    transition: transform .5s ease;
+    transform: rotate(180deg); }
+  .dropdown .dropdown__list {
+    z-index: 9999;
+    border-radius: 6px;
+    display: none; }
+    .dropdown .dropdown__list li {
+      color: var(--charcoal-grey); }
+      .dropdown .dropdown__list li:hover, .dropdown .dropdown__list li.\--unread {
+        background: #F7F7F9;
+        font-weight: 800; }
+        .dropdown .dropdown__list li:hover:first-child, .dropdown .dropdown__list li:hover:last-child, .dropdown .dropdown__list li.\--unread:first-child, .dropdown .dropdown__list li.\--unread:last-child {
+          border-radius: 6px; }
+      .dropdown .dropdown__list li a {
+        color: var(--charcoal-grey);
+        text-decoration: none; }
+  .miscelanea_line {
+    margin-bottom: 40px; }
+    .miscelanea_line .\--text {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px; }
+    .miscelanea_line.\--horizontal .\--line {
+      transform: rotate(90deg);
+      margin-left: 34px;
+      margin-top: -5px; }
+    .miscelanea_line.\--vertical .\--text {
+      transform: rotate(90deg); }
+    .miscelanea_line.\--vertical .\--line {
+      margin-left: 26px;
+      margin-top: 30px; }
+  .land__control .\--text {
+    padding-left: 70px; }
+  @media only screen and (max-width: 561px) {
+    .land__valores {
+      margin-bottom: 80px; } }
+  .land__valores .miscelanea_line {
+    right: 0;
+    top: 100px; }
+  .land__valores.\--learn .miscelanea_line {
+    left: 0;
+    right: auto;
+    top: 86px; }
+    .land__valores.\--learn .miscelanea_line .\--line {
+      margin-left: 45px;
+      margin-top: 47px; }
+    .land__valores.\--learn .miscelanea_line .\--text {
+      transform: rotate(-90deg); }
+  .land__learn .miscelanea_line .\--line {
+    margin-left: 45px;
+    margin-top: 51px; }
+  .land__learn .miscelanea_line .\--text {
+    transform: rotate(-90deg); }
+  .land__steps .miscelanea_line {
+    right: 0px;
+    margin-bottom: 0px; }
+    .land__steps .miscelanea_line .\--line {
+      margin-left: 20px;
+      margin-top: 30px; }
+  .sign.negative:after {
+    content: "\2193";
+    color: #E81F37;
+    font-size: 22px;
+    vertical-align: top; }
+  .sign.positive:after {
+    content: "\2191";
+    color: #00A364;
+    font-size: 22px;
+    vertical-align: top;
+    margin-left: 5px; }
+  .rate:after {
+    content: "R$";
+    font-size: 34px;
+    position: absolute;
+    left: -50px;
+    top: 0px; }
+  .\--variation.currency-variation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .\--variation.currency-variation .\--label {
+      width: 70%; }
+  @media only screen and (max-width: 561px) {
+    .land__content.\--wallet .content__left a.button {
+      margin-top: 23px; } }
+  @media only screen and (max-width: 561px) {
+    .land__content.\--wallet .content__left {
+      margin-top: 30px;
+      height: calc(100vh + 130px); } }
+  @media only screen and (max-width: 561px) {
+    .land__content.\--wallet.\--cuenta .content__left {
+      margin-top: 0px;
+      justify-content: center;
+      height: calc(100vh - 130px); } }
+  @media only screen and (max-width: 561px) {
+    .land__content.\--comprar .content__left {
+      display: flex;
+      justify-content: center;
+      height: calc(100vh - 134px); } }
+  .\--number {
+    background: #FFD371;
+    font-weight: bold;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 561px) {
+      .\--number {
+        align-self: center;
+        margin-bottom: 20px; } }
+
+/*# sourceMappingURL=main.css.map */

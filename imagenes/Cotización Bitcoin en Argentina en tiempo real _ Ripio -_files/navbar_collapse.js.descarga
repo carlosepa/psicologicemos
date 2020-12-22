@@ -1,0 +1,28 @@
+window.onload = function () {
+    var mobileBtn = document.querySelector('.mobile-btn');
+    var menu = document.querySelector('.nav__container--links');
+    var closeBtn = document.querySelector('.closeBtn');
+    var overlay = document.querySelector('.overlay');
+
+    if(mobileBtn){
+        mobileBtn.addEventListener('click', function(){
+        menu.className += ' open';
+        closeBtn.className += ' open';
+        overlay.className += ' open';
+        })
+    }
+    if(closeBtn){
+        closeBtn.addEventListener('click', function(){
+            menu.className = 'nav__container--links items-center justify-start xs-hide sm-hide md-hide';
+            closeBtn.className = 'closeBtn';
+            overlay.className = 'overlay';
+        })
+    }
+    window.addEventListener('click', function(event){
+        if(event.target === overlay){
+          menu.className = 'nav__container--links items-center justify-start xs-hide sm-hide md-hide';
+          overlay.className = 'overlay';
+        }
+    })
+
+}

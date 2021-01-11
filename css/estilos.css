@@ -39,3 +39,42 @@ nav {
 .centralo {
   text-align:center;
 }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #6b5678;
+  padding: 100px;
+}
+
+.lista-de-footer {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.lifooter{
+  text-decoration: none;
+ font-family: 'Montserrat', sans-serif;
+ color: #e7f7e1;
+}
+
+.iconos-de-footer {
+  margin-top: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  font-size: xx-large;
+  color: #e7f7e1;
+}
+
+i {
+  color: #e7f7e1;
+  text-decoration: none;
+}
+
+.mensaje-final {
+  text-align: center;
+  color: #e7f7e1;
+}
